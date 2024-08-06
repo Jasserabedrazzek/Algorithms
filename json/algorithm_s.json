@@ -1,0 +1,247 @@
+[
+    {
+        "id": 1528343109,
+        "title": "Affichage",
+        "description": "Si nous voulons afficher un message, nous utilisons les instructions suivantes",
+        "algo": "Ecrire (\u2018Le message \u00e0 afficher\u2019)",
+        "url": "AlgoPy/?el_id=1528343109"
+    },
+    {
+        "id": 1635936684,
+        "title": "Affectation",
+        "description": "Si on veut cr\u00e9er une variable x de type entier et on veut lui donner la valeur",
+        "algo": "x <- 5",
+        "url": "AlgoPy/?el_id=1635936684"
+    },
+    {
+        "id": 4516683029,
+        "title": "Saisie de donn\u00e9e",
+        "description": "Pour donner l\u2019acc\u00e8s \u00e0 l\u2019utilisateur de saisir des donn\u00e9s par le clavier, on do",
+        "algo": "lire(n) ",
+        "url": "AlgoPy/?el_id=4516683029"
+    },
+    {
+        "id": 4908912092,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne la racine carr\u00e9e \nd\u2019un r\u00e9el x",
+        "algo": "Racine_carr\u00e9e(x)",
+        "url": "AlgoPy/?el_id=4908912092"
+    },
+    {
+        "id": 5922799518,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne la valeur absolu \nd\u2019un r\u00e9el x",
+        "algo": "abs(x)",
+        "url": "AlgoPy/?el_id=5922799518"
+    },
+    {
+        "id": 5105231701,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Enl\u00e8ve la partie \nd\u00e9cimale d\u2019un r\u00e9el x",
+        "algo": "Tronc(x)",
+        "url": "AlgoPy/?el_id=5105231701"
+    },
+    {
+        "id": 2739915426,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne l\u2019entier le plus \nproche du r\u00e9el x",
+        "algo": "Arrondi(x)",
+        "url": "AlgoPy/?el_id=2739915426"
+    },
+    {
+        "id": 4902817087,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne x puissance y",
+        "algo": "pow(x,y)",
+        "url": "AlgoPy/?el_id=4902817087"
+    },
+    {
+        "id": 2073427509,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne un entier \nal\u00e9atoire entre x et y",
+        "algo": "Al\u00e9a (x,y)",
+        "url": "AlgoPy/?el_id=2073427509"
+    },
+    {
+        "id": 4623735924,
+        "title": "Les fonctions sur les types num\u00e9riques",
+        "description": "Donne un r\u00e9el al\u00e9atoire \nentre x et y\n",
+        "algo": "Al\u00e9a (x,y) ",
+        "url": "AlgoPy/?el_id=4623735924"
+    },
+    {
+        "id": 2403790751,
+        "title": "Les structures de  contr\u00f4le conditionnelles",
+        "description": "Ces structures sont utilis\u00e9es lorsque le programmeur souhait de v\u00e9rifier la val",
+        "algo": "Si Condition alors ",
+        "url": "AlgoPy/?el_id=2403790751"
+    },
+    {
+        "id": 6764320979,
+        "title": "Les symboles de comparaison",
+        "description": "Le reste de la division enti\u00e8re",
+        "algo": "mod",
+        "url": "AlgoPy/?el_id=6764320979"
+    },
+    {
+        "id": 2802919876,
+        "title": "Les symboles de comparaison",
+        "description": "La division enti\u00e8re",
+        "algo": "div",
+        "url": "AlgoPy/?el_id=2802919876"
+    },
+    {
+        "id": 1233522794,
+        "title": "Les symboles de comparaison",
+        "description": "La comparaison",
+        "algo": "=",
+        "url": "AlgoPy/?el_id=1233522794"
+    },
+    {
+        "id": 9641717889,
+        "title": "Les symboles de comparaison",
+        "description": "condition et condition ",
+        "algo": "et",
+        "url": "AlgoPy/?el_id=9641717889"
+    },
+    {
+        "id": 9175315732,
+        "title": "Les symboles de comparaison",
+        "description": "condition ou condition",
+        "algo": "ou",
+        "url": "AlgoPy/?el_id=9175315732"
+    },
+    {
+        "id": 7326798955,
+        "title": " Chaine de caract\u00e8res et  ses m\u00e9thodes",
+        "description": "On a 256 caract\u00e8res (255 (clavier) + \u2019\u2019 vide)\nChaque caract\u00e8re a un code ASCII ",
+        "algo": "ch <- 'Bac 2024'",
+        "url": "AlgoPy/?el_id=7326798955"
+    },
+    {
+        "id": 4061629326,
+        "title": "Extraction d\u2019une sous cha\u00eene ",
+        "description": "ch[id : if ] \nid : indice de d\u00e9but \nif : indice de fin \u2013 1",
+        "algo": "c <- ch[id : if ] ",
+        "url": "AlgoPy/?el_id=4061629326"
+    },
+    {
+        "id": 1204438996,
+        "title": " Les m\u00e9thodes",
+        "description": "Code ASCII du caract\u00e8re x",
+        "algo": "ord(x) ",
+        "url": "AlgoPy/?el_id=1204438996"
+    },
+    {
+        "id": 5883057174,
+        "title": " Les m\u00e9thodes",
+        "description": "Caract\u00e8re dont le code ASCII est x",
+        "algo": "chr(x) ",
+        "url": "AlgoPy/?el_id=5883057174"
+    },
+    {
+        "id": 7274725113,
+        "title": " Les m\u00e9thodes",
+        "description": "Retourne un entier repr\u00e9sentant la \nlongueur de ch. \nLong (ch) = ord (ch[0])",
+        "algo": "Long (ch)",
+        "url": "AlgoPy/?el_id=7274725113"
+    },
+    {
+        "id": 7820206660,
+        "title": " Les m\u00e9thodes",
+        "description": "Retourne la premi\u00e8re position de la cha\u00eene ch1 dans la cha\u00eene ch2. ",
+        "algo": "Pos (ch1, ch2)",
+        "url": "AlgoPy/?el_id=7820206660"
+    },
+    {
+        "id": 5520572823,
+        "title": " Les m\u00e9thodes",
+        "description": "Retourne une sous cha\u00eene de n \ncaract\u00e8res \u00e0 partir de la position p \nde la cha\u00ee",
+        "algo": "Sous_cha\u00eene (ch, p, n)",
+        "url": "AlgoPy/?el_id=5520572823"
+    },
+    {
+        "id": 3398605665,
+        "title": " Les m\u00e9thodes",
+        "description": "Supprime N caract\u00e8res de CH \u00e0 partir de la position P. ",
+        "algo": "Efface (ch, p, n) ",
+        "url": "AlgoPy/?el_id=3398605665"
+    },
+    {
+        "id": 7604889972,
+        "title": " Les m\u00e9thodes",
+        "description": "Convertit une valeur num\u00e9rique N en une cha\u00eene CH. ",
+        "algo": "Convch (n, ch) ",
+        "url": "AlgoPy/?el_id=7604889972"
+    },
+    {
+        "id": 7559698425,
+        "title": " Les m\u00e9thodes",
+        "description": "Convertit une cha\u00eene de \ncaract\u00e8res CH en une valeur \nnum\u00e9rique N. De plus, ell",
+        "algo": "Valeur (ch, n, err)",
+        "url": "AlgoPy/?el_id=7559698425"
+    },
+    {
+        "id": 5975657591,
+        "title": " Les m\u00e9thodes",
+        "description": "majuscule de x, s\u2019il est possible",
+        "algo": "Majus (x) ",
+        "url": "AlgoPy/?el_id=5975657591"
+    },
+    {
+        "id": 9902136453,
+        "title": "Les structures de  contr\u00f4le it\u00e9ratives",
+        "description": "Il s\u2019agit d\u2019une structure it\u00e9rative utilis\u00e9e lorsqu\u2019il y\u2019a une r\u00e9p\u00e9tition d'une",
+        "algo": "Pour i de 0 \u00e0 n-1 faire",
+        "url": "AlgoPy/?el_id=9902136453"
+    },
+    {
+        "id": 7890348954,
+        "title": "Les structures de  contr\u00f4le it\u00e9ratives",
+        "description": "La boucle while r\u00e9p\u00e8te le bloc d\u2019instruction lorsque la condition d\u2019entr\u00e9e est ",
+        "algo": "Tant que condition d\u2019entr\u00e9e faire",
+        "url": "AlgoPy/?el_id=7890348954"
+    },
+    {
+        "id": 5658909779,
+        "title": "Les structures de  contr\u00f4le it\u00e9ratives",
+        "description": "Sans faire une v\u00e9rification pour la premi\u00e8re it\u00e9ration, la boucle r\u00e9p\u00e9ter refai",
+        "algo": "R\u00e9p\u00e9ter",
+        "url": "AlgoPy/?el_id=5658909779"
+    },
+    {
+        "id": 4601815660,
+        "title": "Les Tableau",
+        "description": "Un tableau unidimensionnel (ou vecteur) est une structure de donn\u00e9es permettant",
+        "algo": "Tableau",
+        "url": "AlgoPy/?el_id=4601815660"
+    },
+    {
+        "id": 9850244258,
+        "title": "Sous-Programme",
+        "description": "Une proc\u00e9dure est un sous-programme qui permet la r\u00e9solution d\u2019un probl\u00e8me donn",
+        "algo": "Proc\u00e9dure",
+        "url": "AlgoPy/?el_id=9850244258"
+    },
+    {
+        "id": 4358898044,
+        "title": "Sous-Programme",
+        "description": "On appelle un algorithme en tant que fonction, tout traitement qui a pour objec",
+        "algo": "Fonction",
+        "url": "AlgoPy/?el_id=4358898044"
+    },
+    {
+        "id": 4363026331,
+        "title": "BacPratique",
+        "description": "les videos ",
+        "algo": "Qt Designer",
+        "url": "AlgoPy/?el_id=4363026331&p=1"
+    },
+    {
+        "id": 7019168326,
+        "title": "Les m\u00e9thodes",
+        "description": "est une fonction bool\u00e9enne qui renvoie VRAI si la case test\u00e9e contient un nombr",
+        "algo": "Estnum",
+        "url": "AlgoPy/?el_id=7019168326"
+    }
+]

@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    text-decoration: none;
+}
+body {
+    background-color: #16172b;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    overflow: none;
+
+}
+.container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: none;
+}
+.connection-bar {
+    height: 2px;
+    background-color: blue;
+    width: 0%;
+}
+.navbar {
+    display: flex;
+    padding: 15px;
+    gap: 25px;
+    justify-content: space-between;
+    overflow: none;
+    background-color: #10111a;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.algo,.rithme,.fgh-gg-s {
+    color: white;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;  
+    font-optical-sizing: auto;  
+    font-weight: 600;  
+    font-style: normal;  
+    font-variation-settings:    
+    "wdth" 100;
+    user-select: none;
+}
+.algo {
+    background: linear-gradient(to right, rgb(0, 195, 255), rgb(0, 17, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.logo:hover {
+    scale:1.02;
+}
+.links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.link {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 628;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 12px;
+}
+.list-bars {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: end;
+    display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid transparent;
+    border-top: 0;
+    width: 200px;
+    max-width: 100%;
+    max-width: 90%;
+    position: absolute;
+    right: -106px;
+    transform: translateX(-50%);
+    margin-top: 58px;
+    padding: 5px;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    background-color: #10111a;
+    display:none ;
+    user-select: none;
+
+}
+.link:hover {
+    color: rgb(250, 47, 47);
+}
+.content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    display: none;
+}
+.content::-webkit-scrollbar {
+    width: 7px;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 25px;
+}.content::-webkit-scrollbar {
+    width: 7px;
+}
+.footer {
+    background-color: #191a2c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.fol {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.name {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.line {
+    width: 100px;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.definition-algo-python {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.algo-def {
+    color: #fff;
+}
+.d-a {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 628;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding: 5px;
+    font-size: 15px;
+}
+.title-def {
+    color: blueviolet;
+    text-shadow: 0 0 10px rgb(132, 0, 255);
+}
+.line-1 {
+    margin-bottom: 25px;
+}
+.boxs {
+    
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.algo-box {
+    border: 1px solid #fff;
+    width: 200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 240px;
+}
+.algo-box:hover {
+    scale: 1.02;
+}
+.strut-name {
+    padding: 15px;
+    background-color:#1a1b2b;
+    font-family: "Zain", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+    
+}
+.titles,.description {
+    background-color: #0a0b0f;
+    padding: 20px;
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    height: 100%;
+}
+@media (max-width: 600px) {
+    .links {
+        display: none;
+    }
+    .list-bars {
+        display: flex;
+        cursor: pointer;
+    }
+    .algo-box {
+        width: 400px;
+
+    }
+}

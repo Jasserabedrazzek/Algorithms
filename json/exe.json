@@ -1,0 +1,218 @@
+[
+    {
+        "id": 9193715,
+        "name": "Somme de deux chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier compos\u00e9 de 2 chiffres et calculer la \nsomme de ses chiffres.\nExemple l\u2019utilisateur saisi l\u2019entier 54 le programme affiche 9 (5+4)\n",
+        "correction": "Debut Chiffres2\nEcrire (\u2018donner un entier compos\u00e9 de deux chiffres\u2019)\nLire (n)\nu <- n mod 10\nd <-  n div 10\ns <- u+d\nEcrire (s)\nFin Chiffres2",
+        "link": "./exe/?exe=9193715"
+    },
+    {
+        "id": 2131145,
+        "name": "Somme de trois chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier compos\u00e9 de 3 chiffres et calculer la \nsomme de ses chiffres\nExemple l\u2019utilisateur saisi l\u2019entier 235 le programme affiche 10 (2+3+5)\n",
+        "correction": "D\u00e9but Somme_chiffres\nEcrire (\u2018\u2019Donner un entier compos\u00e9 de 3 chiffres\u2019\u2019)\nLire (n)\nc <- n div 100\nd <- (n div 10) mod 10\nu <- n mod 10\ns <- c + d + u \nEcrire (\u2018\u2019La somme des chiffres\u2019\u2019, c, \u2018\u2018,\u2019\u2019, d, \u2019\u2019et\u2019\u2019, u, \u2018\u2019est\u2019\u2019, s)\nFin Somme_chiffres",
+        "link": "./exe/?exe=2131145"
+    },
+    {
+        "id": 7439730,
+        "name": "La racine carr\u00e9e",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de faire calculer la racine carr\u00e9e d\u2019un r\u00e9el x\n",
+        "correction": "D\u00e9but racine\nEcrire (''Donner un r\u00e9el '') \nLire(x) \nSi x \u2265 0 alors \u00e9crire(''La racine carr\u00e9e est ='' , racine_carr\u00e9e(x) ) \nFin Si\nFin racine",
+        "link": "./exe/?exe=7439730"
+    },
+    {
+        "id": 5084083,
+        "name": "Parit\u00e9",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de v\u00e9rifier la parit\u00e9 d\u2019un entier (en utilisant la forme simple)",
+        "correction": "D\u00e9but parit\u00e9\nEcrire (''Donner un entier '') \nLire(n) \nSi x mod2 = 0 alors Ecrire(n,\u2019est pair\u2019 ) \nFin Si\nSi x mod 2=0 alors Ecrire(n,\u2019est impair\u2019)\nFin Si\nFin parite\n",
+        "link": "./exe/?exe=5084083"
+    },
+    {
+        "id": 947944,
+        "name": "Parit\u00e9",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de v\u00e9rifier la parit\u00e9 d\u2019un entier (en utilisant la forme \nalternative)",
+        "correction": "D\u00e9but parit\u00e9\nEcrire (''Donner un entier '') \nLire(n) \nSi x mod2 = 0 alors Ecrire(n,\u2019est pair\u2019 ) \nSinon Ecrire(n,\u2019est impair\u2019)\nFin Si\nFin parite",
+        "link": "./exe/?exe=947944"
+    },
+    {
+        "id": 4014865,
+        "name": "Moyenne",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir une moyenne (moy) puis affiche la d\u00e9cision \ncorrespondante :\nADMIS si moy >=10\nCONTROLE si 9<=moy<10\nREDOUBLE si moy < 9",
+        "correction": "D\u00e9but d\u00e9cision \n\u00c9crire(''Donner une moyenne'') \nLire(moy) \nSi moy>=10 alors message \u2190 ''ADMIS'' \nSinon Si moy>=9 alors message \u2190 ''CONTROLE'' \nSinon message \u2190 ''REDOUBLE'' \nFin Si \nEcrire(message) \nFin d\u00e9cision",
+        "link": "./exe/?exe=4014865"
+    },
+    {
+        "id": 6540264,
+        "name": " Nombre Cubique",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier n contenant 3 chiffres puis affiche si le \nnombre est cubique ou non.\nUn nombre est dit cubique s\u2019il est \u00e9gal \u00e0 la somme des cubes de ses chiffres.\nExemple 153est cubique puisque 1^3+5^3+3^3 = 153",
+        "correction": "D\u00e9but cubique\n\u00c9crire(''Donner un entier compos\u00e9 de 3 chiffres'') \nLire(n) \nc <- n div 100\nd <- (n div 100) mod 10\nu <- n mod 10\ns <- c\n3 + d3 + u3\nSi s=n alors Ecrire (n, \u2018Cubique \u2018)\nSinon Ecrire(n, \u2018 n est pas cubique\u2019)\nFin Si \nFin cubique",
+        "link": "./exe/?exe=6540264"
+    },
+    {
+        "id": 6246379,
+        "name": "E-mail",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir une adresse mail de la fa\u00e7on suivante : \npr\u00e9nom.nom@serveur.extension puis affiche chaque partie seule.\nExemple : bac2024@gmail.com\nPr\u00e9nom : bac\nNom : 2024\nServeur : gmail\nExtension : com",
+        "correction": "D\u00e9but email\n\u00c9crire(''Donner un email'') \nLire(ch) \nprenom<- sous_chaine(ch,0,pos(\u2018.\u2019,ch))\nEcrire(\u2018Pr\u00e9nom :\u2019,prenom)\nnom <- sous_chaine(ch,pos(\u2018.\u2019,ch)+1,pos(\u2018@\u2019,ch))\nEcrire(\u2018Nom :\u2019,nom)\nEffacer (ch, 0, pos(\u2018@\u2019,ch)+1)\nserveur <- sous_chaine(ch,0, pos(\u2018.\u2019,ch))\nEcrire(\u2018Serveur :\u2019,serveur)\nextension <- sous_chaine(ch,pos(\u2018.\u2019,ch)+1, long(ch))\nEcrire (\u2018Extension : \u2018,extension)\nFin email",
+        "link": "./exe/?exe=6246379"
+    },
+    {
+        "id": 2448042,
+        "name": " Nombre magique",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier n contenant minimum 4 chiffres et qui \naffiche s\u2019il est magique ou non.\nUn nombre est dit magique si la somme des deux premiers chiffres est \u00e9gal au produit de \ndeux derniers chiffres.\nExemple : n=32451, n est magique car 3+2 = 5*1\n",
+        "correction": "D\u00e9but magique\n\u00c9crire(''Donner un entier'') \nLire(n)\nch <- convch(n)\ns <- valeur(ch[0])+valeur(ch[1])\np <- valeur (ch[long(ch)-2])* valeur(ch[long(ch)-1])\nsi p=s alors Ecrire(n, \u2018est magique\u2019)\nsinon Ecrire (n, \u2018est non magique\u2019)\nFin Si\nFin magique",
+        "link": "./exe/?exe=2448042"
+    },
+    {
+        "id": 187963,
+        "name": "Somme de 5 entiers",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme de 5 entiers donn\u00e9s.",
+        "correction": "D\u00e9but somme\ns <- 0\nPour i de 0 \u00e0 4 faire\n Ecrire(\u2018Donner un entier\u2019)\n Lire(n)\n s <- s+n\nFin Pour\nEcrire(s)\nFin somme\n",
+        "link": "./exe/?exe=187963"
+    },
+    {
+        "id": 7370556,
+        "name": "Somme des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des chiffres d\u2019un entier compos\u00e9 de 3 \nchiffres (sans utiliser mod et div).",
+        "correction": "D\u00e9but somme_chiffres\ns <- 0\nEcrire(\u2018Donner un entier\u2019)\nLire(n)\nch <- convch(n)\ns <- valeur(ch[0])+valeur(ch[1])+valeur(ch[2])\nEcrire(s)\nFin somme_chiffres\n",
+        "link": "./exe/?exe=7370556"
+    },
+    {
+        "id": 434254,
+        "name": " Somme des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des chiffres d\u2019un entier quelconque",
+        "correction": "D\u00e9but somme_chiffres\ns <- 0\nEcrire(\u2018Donner un entier\u2019)\nLire(n)\nch <- convch(n)\nPour i de 0 \u00e0 long(ch)-1 faire\ns <- s+ valeur(ch[i])\nFin Pour\nEcrire(s)\nFin somme_chiffres",
+        "link": "./exe/?exe=434254"
+    },
+    {
+        "id": 9978674,
+        "name": "Nombre des espaces",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le nombre des espaces dans une chaine de \ncaract\u00e8res donn\u00e9e.\nExemple : ch=\u2019 Salut tout le monde\u2019 on aura Le nb d\u2019espace est 3.\n",
+        "correction": "D\u00e9but nb_espace\nnb <- 0\nEcrire(\u2018Donner une chaine de caract\u00e8re\u2019)\nLire(ch)\nPour i de 0 \u00e0 long(ch)-1 faire\nsi ch[i]= \u2018 \u2018alors nb <- nb+1\nFin Si\nFin Pour\nEcrire (\u2018Le nb d espace est \u2018,nb)\nFin nb_espace",
+        "link": "./exe/?exe=9978674"
+    },
+    {
+        "id": 3386423,
+        "name": "Concat\u00e9nation",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de concat\u00e9ner n caract\u00e8res/chaines de caract\u00e8res pour \nformer une chaine de caract\u00e8res.",
+        "correction": "D\u00e9but concat\u00e9nation\nEcrire (\u2018Donner le nbr des chaines\u2019)\nLire (n)\nch <- \u2018\u2019\nPour i de 0 \u00e0 n-1 faire\nEcrire (\u2018Donner une chaine\u2019)\nLire (c)\nch1 <- ch1+ c\nFin Pour\nEcrire (ch)\nFin concat\u00e9nation",
+        "link": "./exe/?exe=3386423"
+    },
+    {
+        "id": 1935919,
+        "name": "Modification chaine de caract\u00e8res",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de changer le caract\u00e8re de la position donn\u00e9e par \u2018_\u2019.\nExemple : ch=\u2019python\u2019 et la position est 3, on aura py_hon",
+        "correction": "D\u00e9but modification\nEcrire (\u2018Donner une chaine de caract\u00e8res\u2019)\nLire (ch)\nEcrire (Donner la position\u2019)\nLire(pos)\nch2 <- '' ''\nPour i de 0 \u00e0 long(ch)-1 faire\nsi ch[i] = ch[pos-1] alors \n ch2 <- ch2 + ''_ ''\nSinon \n ch2 <- ch2 + ch[i]\nFin Si\nFin Pour\nFin modification",
+        "link": "./exe/?exe=1935919"
+    },
+    {
+        "id": 6907896,
+        "name": "Modification chaine de caract\u00e8res",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de changer le caract\u00e8re espace par son nombre \nd\u2019occurrence.\nExemple : ch = \u2018Salut tout le monde\u2019, on aura salut1tout2le3monde",
+        "correction": "D\u00e9but chang_occ\nEcrire (\u2018Donner une chaine de caract\u00e8res\u2019)\nLire (ch)\nnb <- 0\nch2 <- '' ''\nPour i de 0 \u00e0 long(ch)-1 faire\nsi ch[i]= \u2018 \u2018 alors \nnb <- nb+1 \nch2 <- ch2 + convch(nb)\n sinon \n ch2<- ch2+ch[i]\nFin Si\nFin Pour\nEcrire (ch)\nFin chang_occ",
+        "link": "./exe/?exe=6907896"
+    },
+    {
+        "id": 3737352,
+        "name": "Factorielle",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la factorielle d\u2019un entier donn\u00e9e\n6 ! = 1*2*3*4*5*6",
+        "correction": "D\u00e9but factorielle\nEcrire (\u2018Donner uu entier\u2019)\nLire (n)\nf <-1\nPour i de 0 \u00e0 n-1 faire\nf <- f*(i+1)\nFin Pour\nFin factorielle",
+        "link": "./exe/?exe=3737352"
+    },
+    {
+        "id": 6648768,
+        "name": "Diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de v\u00e9rifier si un entier est diviseur d\u2019un autre.",
+        "correction": "D\u00e9but diviseur\nEcrire (\u2018Donner uu entier\u2019)\nLire (x)\nEcrire (\u2018Donner un entier\u2019)\nLire(y)\nSi x mod y =0 alors Ecrire(x, \u2018est divisible par\u2019,y)\nFin Si\nFin diviseur",
+        "link": "./exe/?exe=6648768"
+    },
+    {
+        "id": 6967206,
+        "name": "Afficher les diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d\u2019afficher les diviseurs d\u2019un entier donn\u00e9.",
+        "correction": "D\u00e9but diviseur\nEcrire (\u2018Donner uu entier\u2019)\nLire (x)\nPour i de 1 \u00e0 x faire\nsi x mod i = 0 alors Ecrire (i)\nFin Si\nFin Pour\nFin diviseur",
+        "link": "./exe/?exe=6967206"
+    },
+    {
+        "id": 4620585,
+        "name": " Somme des diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des diviseurs d\u2019un entier donn\u00e9.",
+        "correction": "D\u00e9but diviseur\nEcrire (\u2018Donner uu entier\u2019)\nLire (x)\ns <- 0\nPour i de 1 \u00e0 x faire\nsi x mod i = 0 alors s <- s+i\nFin Si\nFin Pour\nEcrire(\u2018La somme des diviseurs de\u2019 ,x,\u2019 est\u2019 , s) \nFin diviseur",
+        "link": "./exe/?exe=4620585"
+    },
+    {
+        "id": 6771700,
+        "name": "Nombre des diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le nombre des diviseurs d\u2019un entier donn\u00e9.",
+        "correction": "D\u00e9but diviseur\nEcrire (\u2018Donner uu entier\u2019)\nLire (x)\nnb <- 0\nPour i de 1 \u00e0 x faire\nsi x mod i = 0 alors nb <- nb+1\nFin Si\nFin Pour\nEcrire(\u2018Le nombre des diviseurs de\u2019 ,x,\u2019 est\u2019 , nb) \nFin diviseur",
+        "link": "./exe/?exe=6771700"
+    },
+    {
+        "id": 9878908,
+        "name": "Nombre Premier",
+        "type": "Theorique",
+        "exercise": "Un nombre premier est un entier naturel qui admet exactement deux diviseurs distincts \nentiers et positifs. Ces deux diviseurs sont 1 et le nombre consid\u00e9r\u00e9",
+        "correction": "D\u00e9but premier\nEcrire (\u2018Donner un entier\u2019)\nLire (n)\nnb <- 0\nPour i de 0 \u00e0 n-1 faire\nsi n mod (i+1) = 0 alors nb <- nb+1\nFin Si\nFin Pour\nEcrire(\u2018Le nombre des diviseurs de\u2019 ,x,\u2019 est\u2019 , nb) \nSi nb = 2 alors Ecrire(n, \u2018est premier\u2019)\nSinon Ecrire (n,\u2019n est pas premier\u2019)\nFin Si\nFin premier",
+        "link": "./exe/?exe=9878908"
+    },
+    {
+        "id": 797579,
+        "name": "PGCD",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le pgcd de 2 entiers a et b par la m\u00e9thode de \ndiff\u00e9rence.\nExemple : a=15 et b=27\npgcd(15,27)=pgcd(15,27-15)=pgcd(15,12)=pgcd(15-12,12)=pgcd(3,12)=pgcd(3 ,12-\n3)=pgcd(3,9)=pgcd(3,9-3)=pgcd(3,6)=pgcd(3,6-3)=pgcd(3,3)=3",
+        "correction": "D\u00e9but PGCD\nEcrire (\u2018Donner a)\nLire (a)\nEcrire(\u2018Donner b\u2019)\nLire(b)\nR\u00e9p\u00e9ter\n si a>b alors a <- a-b\n sinon b <- b-a \njusqu\u2019\u00e0 a=b\nEcrire(a)\nFin PGCD",
+        "link": "./exe/?exe=797579"
+    },
+    {
+        "id": 1137599,
+        "name": "nombre parfait",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d\u2019afficher tous les nombres parfaits entre m et n tel que \n2<m<n.\nOn dit qu\u2019un nombre est parfait s\u2019il est \u00e9gal \u00e0 la somme de tous ses diviseurs autre que lui m\u00eame",
+        "correction": "D\u00e9but parfait\nR\u00e9p\u00e9ter \nEcrire(\u2018Donner m\u2019)\nLire(m)\nEcrire(\u2018Donner n\u2019)\nLire(n)\njusqu\u2019\u00e0 2<m<n\nPour i de m \u00e0 n faire\n s <-0\n Pour j de 1 \u00e0 i-1 faire\n si i mod j = 0 alors s<-s+j\n Fin Si\n Fin Pour\n Si s= I alors Ecrire(i)\n Fin Si\nFin Pour\nFin p&arfait",
+        "link": "./exe/?exe=1137599"
+    },
+    {
+        "id": 1682732,
+        "name": " Palindrome",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un mot compos\u00e9 de 10 caract\u00e8res au maximum \npuis v\u00e9rifi\u00e9 si ce mot est palindrome (Se lit dans les deux sens)\nExemples : ELLE, RADAR, REVER, DVD ,\u2026",
+        "correction": "D\u00e9but palindrome\nEcrire(\u2018Donner la chaine \u00e0 v\u00e9rifier \u2018)\nLire(ch)\nch_inv <- \u2018\u2019\nPour i de long(ch)-1 \u00e0 0 (Pas=-1)faire\n ch_inv <- ch_inv + ch[i]\nFin Pour\nEcrire(ch_inv)\nSi ch= ch_inv alors Ecrire (ch, \u2018 est palindrome\u2019)\nSinon Ecrire(ch, \u2018 n est pas palindrome\u2019)\nFin Si\nFin palindrome",
+        "link": "./exe/?exe=1682732"
+    },
+    {
+        "id": 9544169,
+        "name": "Etoiles",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d\u2019afficher chacune des 2 figures suivantes pour un nombre \nde ligne n donn\u00e9.\nExemple pour n =5\n",
+        "correction": "D\u00e9but figure1\nEcrire(\u2018Donner le nombre des lignes\u2018)\nLire(n)\nPour i de 1 \u00e0 n faire\n Ecrire(\u2018*\u2019 * i)\nFin Pour\nFin figure1",
+        "link": "./exe/?exe=9544169"
+    },
+    {
+        "id": 3044027,
+        "name": "Somme des carr\u00e9es des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de remplir un tableau T1 de N1 entiers naturels de trois \nchiffres (1 < N1<100) et on se propose de remplir et afficher un tableau T2 de la fa\u00e7on \nsuivante :\nT2[i]= somme des carr\u00e9es des chiffres de T1[i]\nExemple : T1[2]= 254 alors T2[2]= 2^2+5^2+4^2 = 45",
+        "correction": "D\u00e9but Ex1_tableau\nR\u00e9p\u00e9ter\n Ecrire(\u2018Donner la taille du tableau\u2019)\n Lire(N1)\nJusqu\u2019\u00e0 1<N1<100\nPour i de 0 \u00e0 N1-1 faire\n R\u00e9p\u00e9ter \n Lire(T1[i])\n Jusqu\u2019\u00e0 100 \uf0a3T1[i]\uf0a3999\nFin Pour\nPour i de 0 \u00e0 N1-1 faire\n u=T1[i] mod 10\n d = (T1[i] mod 100)div 10\n c = T1[i] div 100\n T2[i] = u2 + d2 + c2\nFin Pour\nEcrire(T2)\nFin Ex1_tableau",
+        "link": "./exe/?exe=3044027"
+    }
+]
