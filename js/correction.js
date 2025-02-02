@@ -41,7 +41,7 @@ function load_data(filename) {
                     <span class="title">${get_data.name}</span>
                     <p class="exe-content">${Paragraphs(get_data.exercise)}</p>
                     <span class="num-exe">Correction</span>
-                    <pre class="exe-content">${Paragraphs(get_data.correction.replace(/\n/g, '<div class="space">')).replace(/‘/g,"'").replace(/’/g,"'")}</pre>
+                    <pre style="overflow-x:auto" class="exe-content">${Paragraphs(get_data.correction.replace(/\n/g, '<div class="space">')).replace(/‘/g,"'").replace(/’/g,"'")}</pre>
 
                 </div>
                 
