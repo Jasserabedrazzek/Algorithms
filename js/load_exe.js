@@ -9,7 +9,7 @@ function load_exercises(filename) {
         return response.json()
     })
     .then(data => {
-        
+        data.sort(function(a, b){return a-b})
         theoreique_content.innerHTML = ``
         for (let i=0; i<data.length; i++) {
             var box = `<a href="${data[i].link}"  class="box-exe">

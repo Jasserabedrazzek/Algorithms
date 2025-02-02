@@ -1,0 +1,468 @@
+{
+    "algorithms": [
+      {
+        "id": 1528343109,
+        "title": "Affichage",
+        "description": "Si nous voulons afficher un message, nous utilisons les instructions suivantes",
+        "algo": "Ecrire (‘Le message à afficher’)",
+        "url": "AlgoPy/?el_id=1528343109"
+      },
+      {
+        "id": 1635936684,
+        "title": "Affectation",
+        "description": "Si on veut créer une variable x de type entier et on veut lui donner la valeur",
+        "algo": "x <- 5",
+        "url": "AlgoPy/?el_id=1635936684"
+      },
+      {
+        "id": 4516683029,
+        "title": "Saisie de donnée",
+        "description": "Pour donner l’accès à l’utilisateur de saisir des données par le clavier, on do",
+        "algo": "lire(n) ",
+        "url": "AlgoPy/?el_id=4516683029"
+      },
+      {
+        "id": 4908912092,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne la racine carrée \nd’un réel x",
+        "algo": "Racine_carré(x)",
+        "url": "AlgoPy/?el_id=4908912092"
+      },
+      {
+        "id": 5922799518,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne la valeur absolu \nd’un réel x",
+        "algo": "abs(x)",
+        "url": "AlgoPy/?el_id=5922799518"
+      },
+      {
+        "id": 5105231701,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Enlève la partie \ndécimale d’un réel x",
+        "algo": "Tronc(x)",
+        "url": "AlgoPy/?el_id=5105231701"
+      },
+      {
+        "id": 2739915426,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne l’entier le plus \nproche du réel x",
+        "algo": "Arrondi(x)",
+        "url": "AlgoPy/?el_id=2739915426"
+      },
+      {
+        "id": 4902817087,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne x puissance y",
+        "algo": "pow(x,y)",
+        "url": "AlgoPy/?el_id=4902817087"
+      },
+      {
+        "id": 2073427509,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne un entier \naléatoire entre x et y",
+        "algo": "Aléa (x,y)",
+        "url": "AlgoPy/?el_id=2073427509"
+      },
+      {
+        "id": 4623735924,
+        "title": "Les fonctions sur les types numériques",
+        "description": "Donne un réel aléatoire \nentre x et y\n",
+        "algo": "Aléa (x,y) ",
+        "url": "AlgoPy/?el_id=4623735924"
+      },
+      {
+        "id": 2403790751,
+        "title": "Les structures de  contrôle conditionnelles",
+        "description": "Ces structures sont utilisées lorsque le programmeur souhait de vérifier la val",
+        "algo": "Si Condition alors ",
+        "url": "AlgoPy/?el_id=2403790751"
+      },
+      {
+        "id": 6764320979,
+        "title": "Les symboles de comparaison",
+        "description": "Le reste de la division entière",
+        "algo": "mod",
+        "url": "AlgoPy/?el_id=6764320979"
+      },
+      {
+        "id": 2802919876,
+        "title": "Les symboles de comparaison",
+        "description": "La division entière",
+        "algo": "div",
+        "url": "AlgoPy/?el_id=2802919876"
+      },
+      {
+        "id": 1233522794,
+        "title": "Les symboles de comparaison",
+        "description": "La comparaison",
+        "algo": "=",
+        "url": "AlgoPy/?el_id=1233522794"
+      },
+      {
+        "id": 9641717889,
+        "title": "Les symboles de comparaison",
+        "description": "condition et condition ",
+        "algo": "et",
+        "url": "AlgoPy/?el_id=9641717889"
+      },
+      {
+        "id": 9175315732,
+        "title": "Les symboles de comparaison",
+        "description": "condition ou condition",
+        "algo": "ou",
+        "url": "AlgoPy/?el_id=9175315732"
+      },
+      {
+        "id": 7326798955,
+        "title": " Chaine de caractères et  ses méthodes",
+        "description": "On a 256 caractères (255 (clavier) + ‘’ vide)\nChaque caractère a un code ASCII ",
+        "algo": "ch <- 'Bac 2024'",
+        "url": "AlgoPy/?el_id=7326798955"
+      },
+      {
+        "id": 4061629326,
+        "title": "Extraction d’une sous chaïne ",
+        "description": "ch[id : if ] \nid : indice de début \nif : indice de fin – 1",
+        "algo": "c <- ch[id : if ] ",
+        "url": "AlgoPy/?el_id=4061629326"
+      },
+      {
+        "id": 1204438996,
+        "title": " Les méthodes",
+        "description": "Code ASCII du caractère x",
+        "algo": "ord(x) ",
+        "url": "AlgoPy/?el_id=1204438996"
+      },
+      {
+        "id": 5883057174,
+        "title": " Les méthodes",
+        "description": "Caractère dont le code ASCII est x",
+        "algo": "chr(x) ",
+        "url": "AlgoPy/?el_id=5883057174"
+      },
+      {
+        "id": 7274725113,
+        "title": " Les méthodes",
+        "description": "Retourne un entier représentant la \nlongueur de ch. \nLong (ch) = ord (ch[0])",
+        "algo": "Long (ch)",
+        "url": "AlgoPy/?el_id=7274725113"
+      },
+      {
+        "id": 7820206660,
+        "title": " Les méthodes",
+        "description": "Retourne la première position de la chaïne ch1 dans la chaîne ch2. ",
+        "algo": "Pos (ch1, ch2)",
+        "url": "AlgoPy/?el_id=7820206660"
+      },
+      {
+        "id": 5520572823,
+        "title": " Les méthodes",
+        "description": "Retourne une sous chaîne de n \ncaractères à partir de la position p \nde la chaî",
+        "algo": "Sous_chaîne (ch, p, n)",
+        "url": "AlgoPy/?el_id=5520572823"
+      },
+      {
+        "id": 3398605665,
+        "title": " Les méthodes",
+        "description": "Supprime N caractères de CH à partir de la position P. ",
+        "algo": "Efface (ch, p, n) ",
+        "url": "AlgoPy/?el_id=3398605665"
+      },
+      {
+        "id": 7604889972,
+        "title": " Les méthodes",
+        "description": "Convertit une valeur numérique N en une chaîne CH. ",
+        "algo": "Convch (n, ch) ",
+        "url": "AlgoPy/?el_id=7604889972"
+      },
+      {
+        "id": 7559698425,
+        "title": " Les méthodes",
+        "description": "Convertit une chaîne de caractères CH en une valeur \nnumérique N. De plus, ell",
+        "algo": "Valeur (ch, n, err)",
+        "url": "AlgoPy/?el_id=7559698425"
+      },
+      {
+        "id": 5975657591,
+        "title": " Les méthodes",
+        "description": "majuscule de x, s’il est possible",
+        "algo": "Majus (x) ",
+        "url": "AlgoPy/?el_id=5975657591"
+      },
+      {
+        "id": 9902136453,
+        "title": "Les structures de  contrôle itératives",
+        "description": "Il s’agit d’une structure itérative utilisée lorsqu’il y a une répétition d'une",
+        "algo": "Pour i de 0 à n-1 faire",
+        "url": "AlgoPy/?el_id=9902136453"
+      },
+      {
+        "id": 7890348954,
+        "title": "Les structures de  contrôle itératives",
+        "description": "La boucle while répète le bloc d’instruction lorsque la condition d’entrée est ",
+        "algo": "Tant que condition d’entrée faire",
+        "url": "AlgoPy/?el_id=7890348954"
+      },
+      {
+        "id": 5658909779,
+        "title": "Les structures de  contrôle itératives",
+        "description": "Sans faire une vérification pour la première itération, la boucle répéter refai",
+        "algo": "Répéter",
+        "url": "AlgoPy/?el_id=5658909779"
+      },
+      {
+        "id": 4601815660,
+        "title": "Les Tableau",
+        "description": "Un tableau unidimensionnel (ou vecteur) est une structure de données permettant",
+        "algo": "Tableau",
+        "url": "AlgoPy/?el_id=4601815660"
+      },
+      {
+        "id": 9850244258,
+        "title": "Sous-Programme",
+        "description": "Une procédure est un sous-programme qui permet la résolution d’un problèmdonn",
+        "algo": "Procédure",
+        "url": "AlgoPy/?el_id=9850244258"
+      },
+      {
+        "id": 4358898044,
+        "title": "Sous-Programme",
+        "description": "On appelle un algorithme en tant que fonction, tout traitement qui a pour objec",
+        "algo": "Fonction",
+        "url": "AlgoPy/?el_id=4358898044"
+      },
+      {
+        "id": 4363026331,
+        "title": "BacPratique",
+        "description": "les videos ",
+        "algo": "Qt Designer",
+        "url": "AlgoPy/?el_id=4363026331&p=1"
+      },
+      {
+        "id": 7019168326,
+        "title": "Les méthodes",
+        "description": "est une fonction booléenne qui renvoie VRAI si la case testée contient un nombr",
+        "algo": "Estnum",
+        "url": "AlgoPy/?el_id=7019168326"
+      }
+    ],
+    "exercises": [
+      {
+        "id": 9193715,
+        "name": "Somme de deux chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier composé de 2 chiffres et calculer la \nsomme de ses chiffres.\nExemple l’utilisateur saisi l’entier 54 le programme affiche 9 (5+4)\n",
+        "correction": "Debut Chiffres2\nEcrire (‘donner un entier composé de deux chiffres’)\nLire (n)\nu <- n mod 10\nd <-  n div 10\ns <- u+d\nEcrire (s)\nFin Chiffres2",
+        "link": "./exe/?exe=9193715"
+      },
+      {
+        "id": 2131145,
+        "name": "Somme de trois chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier composé de 3 chiffres et calculer la \nsomme de ses chiffres\nExemple l’utilisateur saisi l’entier 235 le programme affiche 10 (2+3+5)\n",
+        "correction": "Début Somme_chiffres\nEcrire (‘’Donner un entier composé de 3 chiffres’‘)\nLire (n)\nc <- n div 100\nd <- (n div 10) mod 10\nu <- n mod 10\ns <- c + d + u \nEcrire (‘’La somme des chiffres’‘, c, ‘’ , d, ’’et’’, u, ‘’est’’, s)\nFin Somme_chiffres",
+        "link": "./exe/?exe=2131145"
+      },
+      {
+        "id": 7439730,
+        "name": "La racine carrée",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de faire calculer la racine carrée d’un réel x\n",
+        "correction": "Début racine\nEcrire (''Donner un réel '') \nLire(x) \nSi x ≥ 0 alors écrire(''La racine carrée est ='' , racine_carré(x) ) \nFin Si\nFin racine",
+        "link": "./exe/?exe=7439730"
+      },
+      {
+        "id": 5084083,
+        "name": "Parité",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de vérifier la parité d’un entier (en utilisant la forme simple)",
+        "correction": "Début parité\nEcrire (''Donner un entier '') \nLire(n) \nSi x mod2 = 0 alors Ecrire(n,’est pair’ ) \nFin Si\nSi x mod 2=0 alors Ecrire(n,’est impair’)\nFin Si\nFin parite\n",
+        "link": "./exe/?exe=5084083"
+      },
+      {
+        "id": 947944,
+        "name": "Parité",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de vérifier la parité d’un entier (en utilisant la forme \nalternative)",
+        "correction": "Début parité\nEcrire (''Donner un entier '') \nLire(n) \nSi x mod2 = 0 alors Ecrire(n,’est pair’ ) \nSinon Ecrire(n,’est impair’)\nFin Si\nFin parite",
+        "link": "./exe/?exe=947944"
+      },
+      {
+        "id": 4014865,
+        "name": "Moyenne",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir une moyenne (moy) puis affiche la décision \ncorrespondante :\nADMIS si moy >=10\nCONTROLE si 9<=moy<10\nREDOUBLE si moy < 9",
+        "correction": "Début décision \nÉcrire(''Donner une moyenne'') \nLire(moy) \nSi moy>=10 alors message ← ''ADMIS'' \nSinon Si moy>=9 alors message ← ''CONTROLE'' \nSinon message ← ''REDOUBLE'' \nFin Si \nEcrire(message) \nFin décision",
+        "link": "./exe/?exe=4014865"
+      },
+      {
+        "id": 6540264,
+        "name": " Nombre Cubique",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier n contenant 3 chiffres puis affiche si le \nnombre est cubique ou non.\nUn nombre est dit cubique s’il est égal à la somme des cubes de ses chiffres.\nExemple 153 est cubique puisque 1^3+5^3+3^3 = 153",
+        "correction": "Début cubique\nÉcrire(''Donner un entier composé de 3 chiffres'') \nLire(n) \nc <- n div 100\nd <- (n div 100) mod 10\nu <- n mod 10\ns <- c3 + d3 + u3\nSi s=n alors Ecrire (n, ‘Cubique ‘)\nSinon Ecrire(n, ‘ n est pas cubique’)\nFin Si \nFin cubique",
+        "link": "./exe/?exe=6540264"
+      },
+      {
+        "id": 6246379,
+        "name": "E-mail",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir une adresse mail de la façon suivante : \nprénom.nom@serveur.extension puis affiche chaque partie seule.\nExemple : bac2024@gmail.com\nPrénom : bac\nNom : 2024\nServeur : gmail\nExtension : com",
+        "correction": "Début email\nÉcrire(''Donner un email'') \nLire(ch) \nprenom <- sous_chaine(ch,0,pos(‘.’,ch))\nEcrire(‘Prénom :’, prenom)\nnom <- sous_chaine(ch,pos(‘.’,ch)+1,pos(‘@’,ch))\nEcrire(‘Nom :’, nom)\nEffacer (ch, 0, pos(‘@’,ch)+1)\nserveur <- sous_chaine(ch,0, pos(‘.’,ch))\nEcrire(‘Serveur :’, serveur)\nextension <- sous_chaine(ch,pos(‘.’,ch)+1, long(ch))\nEcrire (‘Extension : ’, extension)\nFin email",
+        "link": "./exe/?exe=6246379"
+      },
+      {
+        "id": 2448042,
+        "name": " Nombre magique",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un entier n contenant minimum 4 chiffres et qui \naffiche s’il est magique ou non.\nUn nombre est dit magique si la somme des deux premiers chiffres est égal au produit de \ndeux derniers chiffres.\nExemple : n=32451, n est magique car 3+2 = 5*1\n",
+        "correction": "Début magique\nÉcrire(''Donner un entier'') \nLire(n)\nch <- convch(n)\ns <- valeur(ch[0]) + valeur(ch[1])\np <- valeur (ch[long(ch)-2]) * valeur(ch[long(ch)-1])\nsi p=s alors Ecrire(n, ‘est magique’)\nsinon Ecrire (n, ‘est non magique’)\nFin Si\nFin magique",
+        "link": "./exe/?exe=2448042"
+      },
+      {
+        "id": 187963,
+        "name": "Somme de 5 entiers",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme de 5 entiers donnés.",
+        "correction": "Début somme\ns <- 0\nPour i de 0 à 4 faire\n Ecrire(‘Donner un entier’)\n Lire(n)\n s <- s+n\nFin Pour\nEcrire(s)\nFin somme\n",
+        "link": "./exe/?exe=187963"
+      },
+      {
+        "id": 7370556,
+        "name": "Somme des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des chiffres d’un entier composé de 3 \nchiffres (sans utiliser mod et div).",
+        "correction": "Début somme_chiffres\ns <- 0\nÉcrire(‘Donner un entier’)\nLire(n)\nch <- convch(n)\ns <- valeur(ch[0]) + valeur(ch[1]) + valeur(ch[2])\nEcrire(s)\nFin somme_chiffres\n",
+        "link": "./exe/?exe=7370556"
+      },
+      {
+        "id": 434254,
+        "name": " Somme des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des chiffres d’un entier quelconque",
+        "correction": "Début somme_chiffres\ns <- 0\nÉcrire(‘Donner un entier’)\nLire(n)\nch <- convch(n)\nPour i de 0 à long(ch)-1 faire\n s <- s + valeur(ch[i])\nFin Pour\nEcrire(s)\nFin somme_chiffres",
+        "link": "./exe/?exe=434254"
+      },
+      {
+        "id": 9978674,
+        "name": "Nombre des espaces",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le nombre des espaces dans une chaine de \ncaractères donnée.\nExemple : ch=’ Salut tout le monde’ on aura Le nb d’espace est 3.\n",
+        "correction": "Début nb_espace\nnb <- 0\nÉcrire(‘Donner une chaine de caractère’)\nLire(ch)\nPour i de 0 à long(ch)-1 faire\nsi ch[i]= ' ' alors nb <- nb+1\nFin Si\nFin Pour\nEcrire (‘Le nb d espace est ’, nb)\nFin nb_espace",
+        "link": "./exe/?exe=9978674"
+      },
+      {
+        "id": 3386423,
+        "name": "Concaténation",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de concaténer n caractères/chaines de caractères pour \nformer une chaine de caractères.",
+        "correction": "Début concaténation\nÉcrire (‘Donner le nbr des chaines’)\nLire (n)\nch <- ‘’\nPour i de 0 à n-1 faire\nÉcrire (‘Donner une chaine’)\nLire (c)\nch1 <- ch1 + c\nFin Pour\nEcrire (ch)\nFin concaténation",
+        "link": "./exe/?exe=3386423"
+      },
+      {
+        "id": 1935919,
+        "name": "Modification chaine de caractères",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de changer le caractère de la position donnée par ‘_’.\nExemple : ch=’python’ et la position est 3, on aura py_hon",
+        "correction": "Début modification\nÉcrire (‘Donner une chaine de caractères’)\nLire (ch)\nÉcrire (‘Donner la position’)\nLire(pos)\nch2 <- ‘’\nPour i de 0 à long(ch)-1 faire\nsi ch[i] = ch[pos-1] alors \n ch2 <- ch2 + '_'\nSinon \n ch2 <- ch2 + ch[i]\nFin Si\nFin Pour\nFin modification",
+        "link": "./exe/?exe=1935919"
+      },
+      {
+        "id": 6907896,
+        "name": "Modification chaine de caractères",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de changer le caractère espace par son nombre \nd’occurrence.\nExemple : ch = ’Salut tout le monde’, on aura salut1tout2le3monde",
+        "correction": "Début chang_occ\nÉcrire (‘Donner une chaine de caractères’)\nLire (ch)\nnb <- 0\nch2 <- ‘’\nPour i de 0 à long(ch)-1 faire\nsi ch[i]= ' ' alors \nnb <- nb+1 \nch2 <- ch2 + convch(nb)\n sinon \n ch2 <- ch2+ch[i]\nFin Si\nFin Pour\nEcrire (ch)\nFin chang_occ",
+        "link": "./exe/?exe=6907896"
+      },
+      {
+        "id": 3737352,
+        "name": "Factorielle",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la factorielle d’un entier donnée\n6 ! = 1*2*3*4*5*6",
+        "correction": "Début factorielle\nÉcrire (‘Donner uu entier’)\nLire (n)\nf <-1\nPour i de 0 à n-1 faire\nf <- f*(i+1)\nFin Pour\nFin factorielle",
+        "link": "./exe/?exe=3737352"
+      },
+      {
+        "id": 6648768,
+        "name": "Diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de vérifier si un entier est diviseur d’un autre.",
+        "correction": "Début diviseur\nÉcrire (‘Donner uu entier’)\nLire (x)\nÉcrire (‘Donner un entier’)\nLire(y)\nSi x mod y = 0 alors Ecrire(x, ‘est divisible par’, y)\nFin Si\nFin diviseur",
+        "link": "./exe/?exe=6648768"
+      },
+      {
+        "id": 6967206,
+        "name": "Afficher les diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d’afficher les diviseurs d’un entier donné.",
+        "correction": "Début diviseur\nÉcrire (‘Donner uu entier’)\nLire (x)\nPour i de 1 à x faire\nsi x mod i = 0 alors Ecrire (i)\nFin Si\nFin Pour\nFin diviseur",
+        "link": "./exe/?exe=6967206"
+      },
+      {
+        "id": 4620585,
+        "name": " Somme des diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer la somme des diviseurs d’un entier donné.",
+        "correction": "Début diviseur\nÉcrire (‘Donner uu entier’)\nLire (x)\ns <- 0\nPour i de 1 à x faire\nsi x mod i = 0 alors s <- s+i\nFin Si\nFin Pour\nEcrire(‘La somme des diviseurs de’, x, ‘ est’, s) \nFin diviseur",
+        "link": "./exe/?exe=4620585"
+      },
+      {
+        "id": 6771700,
+        "name": "Nombre des diviseurs",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le nombre des diviseurs d’un entier donné.",
+        "correction": "Début diviseur\nÉcrire (‘Donner uu entier’)\nLire (x)\nnb <- 0\nPour i de 1 à x faire\nsi x mod i = 0 alors nb <- nb+1\nFin Si\nFin Pour\nEcrire(‘Le nombre des diviseurs de’, x, ‘ est’, nb) \nFin diviseur",
+        "link": "./exe/?exe=6771700"
+      },
+      {
+        "id": 9878908,
+        "name": "Nombre Premier",
+        "type": "Theorique",
+        "exercise": "Un nombre premier est un entier naturel qui admet exactement deux diviseurs distincts \nentiers et positifs. Ces deux diviseurs sont 1 et le nombre considéré",
+        "correction": "Début premier\nÉcrire (‘Donner un entier’)\nLire (n)\nnb <- 0\nPour i de 0 à n-1 faire\nsi n mod (i+1) = 0 alors nb <- nb+1\nFin Si\nFin Pour\nEcrire(‘Le nombre des diviseurs de’, x, ‘ est’, nb) \nSi nb = 2 alors Ecrire(n, ‘est premier’)\nSinon Ecrire (n, ‘n est pas premier’)\nFin Si\nFin premier",
+        "link": "./exe/?exe=9878908"
+      },
+      {
+        "id": 797579,
+        "name": "PGCD",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de calculer le pgcd de 2 entiers a et b par la méthode de \ndifférence.\nExemple : a=15 et b=27\npgcd(15,27)=pgcd(15,27-15)=pgcd(15,12)=pgcd(15-12,12)=pgcd(3,12)=pgcd(3 ,12-\n3)=pgcd(3,9)=pgcd(3,9-3)=pgcd(3,6)=pgcd(3,6-3)=pgcd(3,3)=3",
+        "correction": "Début PGCD\nÉcrire (‘Donner a’)\nLire (a)\nÉcrire(‘Donner b’)\nLire(b)\nRépéter\n si a>b alors a <- a-b\n sinon b <- b-a \njusqu’à a=b\nÉcrire(a)\nFin PGCD",
+        "link": "./exe/?exe=797579"
+      },
+      {
+        "id": 1137599,
+        "name": "nombre parfait",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d’afficher tous les nombres parfaits entre m et n tel que \n2<m<n.\nOn dit qu’un nombre est parfait s’il est égal à la somme de tous ses diviseurs autre que lui même",
+        "correction": "Début parfait\nRépéter \nÉcrire(‘Donner m’)\nLire(m)\nÉcrire(‘Donner n’)\nLire(n)\njusqu’à 2<m<n\nPour i de m à n faire\n s <- 0\n Pour j de 1 à i-1 faire\n si i mod j = 0 alors s <- s+j\n Fin Si\n Fin Pour\n Si s = i alors Ecrire(i)\n Fin Si\nFin Pour\nFin parfait",
+        "link": "./exe/?exe=1137599"
+      },
+      {
+        "id": 1682732,
+        "name": " Palindrome",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de saisir un mot composé de 10 caractères au maximum \npuis vérifie si ce mot est palindrome (Se lit dans les deux sens)\nExemples : ELLE, RADAR, REVER, DVD ,…",
+        "correction": "Début palindrome\nÉcrire(‘Donner la chaine à vérifier ’)\nLire(ch)\nch_inv <- ‘’\nPour i de long(ch)-1 à 0 (Pas=-1) faire\n ch_inv <- ch_inv + ch[i]\nFin Pour\nÉcrire(ch_inv)\nSi ch = ch_inv alors Écrire (ch, ‘ est palindrome’)\nSinon Écrire(ch, ‘ n est pas palindrome’)\nFin Si\nFin palindrome",
+        "link": "./exe/?exe=1682732"
+      },
+      {
+        "id": 9544169,
+        "name": "Etoiles",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet d’afficher chacune des 2 figures suivantes pour un nombre \nde ligne n donné.\nExemple pour n =5\n",
+        "correction": "Début figure1\nÉcrire(‘Donner le nombre des lignes’)\nLire(n)\nPour i de 1 à n faire\n Écrire(‘*’ * i)\nFin Pour\nFin figure1",
+        "link": "./exe/?exe=9544169"
+      },
+      {
+        "id": 3044027,
+        "name": "Somme des carrées des chiffres",
+        "type": "Theorique",
+        "exercise": "Ecrire un programme qui permet de remplir un tableau T1 de N1 entiers naturels de trois \nchiffres (1 < N1 < 100) et on se propose de remplir et afficher un tableau T2 de la façon \nsuivante :\nT2[i]= somme des carrées des chiffres de T1[i]\nExemple : T1[2]= 254 alors T2[2]= 2^2+5^2+4^2 = 45",
+        "correction": "Début Ex1_tableau\nRépéter\n Écrire(‘Donner la taille du tableau’)\n Lire(N1)\nJusqu’à 1 < N1 < 100\nPour i de 0 à N1-1 faire\n Répéter \n  Lire(T1[i])\n Jusqu’à 100 > T1[i] > 99\nFin Pour\nPour i de 0 à N1-1 faire\n u = T1[i] mod 10\n d = (T1[i] mod 100) div 10\n c = T1[i] div 100\n T2[i] = u*u + d*d + c*c\nFin Pour\nÉcrire(T2)\nFin Ex1_tableau",
+        "link": "./exe/?exe=3044027"
+      }
+    ]
+  }
+  

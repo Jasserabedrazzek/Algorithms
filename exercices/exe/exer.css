@@ -190,6 +190,9 @@ body {
 .btn-x {
     padding: 10px;
 }
+.space {
+    margin-right: 15px;
+}
 @media (max-width: 600px) {
     .links {
         display: none;

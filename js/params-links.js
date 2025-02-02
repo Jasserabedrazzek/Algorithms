@@ -10,20 +10,19 @@ const list_urls = [
 
 function get_url(params_) {
     var url = window.location.href
-    var url_params = url.split('http://')[1] 
-    var path_params = url_params.split('/')[1]
-    if (path_params === 'Algorithms') {
+    path_params = new URL(url).pathname.split('/')
+    
+    if (path_params[1] === 'Algorithms') {
         document.querySelector('.algo-links').style.color='red'
         document.querySelector('.algo-links-menu').style.color='red'
     }
-    else if (path_params === 'home') {
+    else if (path_params[1] === 'home') {
         document.querySelector('.home-links').style.color='red'
         document.querySelector('.home-links-menu').style.color='red'
     }
-    else if (path_params === 'exercices') {
+    else if (path_params[1] === 'exercices') {
         document.querySelector('.exercices-links').style.color='red'
         document.querySelector('.exercices-links-menu').style.color='red'
-        console.log(window.location.hash)
     }
 }
 

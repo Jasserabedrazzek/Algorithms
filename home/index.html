@@ -35,9 +35,10 @@
         </div>
         <div class="content">
             <div class="input-search">
-                <a href="/Algorithms/"  class="search-btn">Algorithms</a>
-                <hr>
-                <a href="/exercices/" class="search-btn">Exercices</a>
+                <input type="search"  oninput="searchJSON()" id="search" class="search-algo" placeholder="Search for an algorithm">
+                <div id="result">
+                    
+                </div>
             </div>
             <div class="images">
                 <img src="/images/img1.png" id="image-exempale" class="img-exmples" loading="lazy" alt="">
@@ -52,12 +53,13 @@
                 <a href="https://www.tiktok.com/@jasser_abr" target="_blank"><i class="fa-brands soc tk fa-tiktok"></i></a>
             </div>
             <hr class="line">
-            <span class="name"><span class="fgh-gg-s"><i class="fa-regular fa-copyright"></i></span> <span class="algo">ALGO</span>
-            <span class="rithme">RITHME</span> <span class="fgh-gg-s">, BAC TN 2024</span></span>
+            <span class="name"><span class="fgh-gg-s"><i class="fa-regular fa-copyright"></i></span> <span class="algo">ELena ALGO</span>
+            <span class="rithme">RITHME</span> <span class="fgh-gg-s">, BAC TN 2024 - <script>document.write(new Date().getFullYear())</script></span></span>
         </div>
     </div>
     
     <script src="/js/images.js"></script>
+    <script src="/js/search.js"></script>
     <script src="/js/params-links.js"></script>
     <script src="/js/open-menu.js"></script>
     <!-- Google tag (gtag.js) -->

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #16172b;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 15px;
+    gap: 25px;
+    justify-content: space-between;
+    overflow: none;
+    background-color: #10111a;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.algo,.rithme,.fgh-gg-s {
+    color: white;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;  
+    font-optical-sizing: auto;  
+    font-weight: 600;  
+    font-style: normal;  
+    font-variation-settings:    
+    "wdth" 100;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.algo {
+    background: linear-gradient(to right, rgb(0, 195, 255), rgb(0, 17, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.logo:hover {
+    scale:1.02;
+}
+.code {
+    color:rgb(0, 255, 200);
+}
+.syntaxHighlighter-symbol {
+    color: orange;
+}
+.syntaxHighlighter {
+    color: blueviolet;
+    
+    font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.string {
+    color:rgb(0, 255, 0)
+}
+.code {
+    display: flex;
+    gap:2px;
+    font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.comment {
+    color: #f7da39;
+}
+.variable {
+    color: #ff00ff;
+}
+.keyword {
+    color:#800000;
+    display: flex;
+}

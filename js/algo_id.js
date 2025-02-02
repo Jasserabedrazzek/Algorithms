@@ -219,19 +219,19 @@ function get_data_from_json() {
                         <div class="algo-py-title">Python</div>
                     </div>
                     <div class="table-algo-py">
-                        <div class="table-algorithm">${Paragraphs(element_data.algo)}</div>
-                        <div class="table-python">${Paragraphs(element_data.py_el)}</div>
+                        <pre class="table-algorithm">${Paragraphs(element_data.algo)}</pre>
+                        <pre class="table-python">${Paragraphs(element_data.py_el)}</pre>
                     </div>
                 </div>
                 <div class="examples">
                     <h2 class="examples-title">Exemples</h2>
                     <div class="editor python-code">
                         <div class="code-title">Python</div>
-                        <code class="code code-py">${Paragraphs(python_sentexe(sentence, element_data.code_python))}</code>
+                        <pre class="code code-py">${Paragraphs(python_sentexe(sentence, element_data.code_python))}</code>
                     </div>
                     <div class="editor algo-code">
                         <div class="code-title">Algorithme</div>
-                        <code class="code code-al">${Paragraphs(element_data.code_algo)}</code>
+                        <pre class="code code-al">${Paragraphs(element_data.code_algo)}</code>
                     </div>
                 </div>
                 <div class="images">
