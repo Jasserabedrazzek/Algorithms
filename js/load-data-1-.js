@@ -1,4 +1,11 @@
 const boxesContents = document.querySelectorAll('.boxs');
+function show_card(data) {
+
+    document.querySelector('.card').style.display = 'flex';
+    document.querySelector('.card-title').textContent = data.title;
+    document.querySelector('.card-content').src = `../embad.html?el_id=${data.id}`;
+    document.querySelector('.link-page').href = data.url;
+}
 
 async function loadData(filename) {
     try {
@@ -10,9 +17,8 @@ async function loadData(filename) {
         data = sortedLists(data);
         data.forEach(item => {
             const box = document.createElement('a');
-            box.href = item.url;
+            box.href = '#'+item.id;
             box.className = 'algo-box';
-
             const strutName = document.createElement('span');
             strutName.className = 'strut-name';
             strutName.textContent = item.algo;
@@ -34,6 +40,9 @@ async function loadData(filename) {
                 fragment.appendChild(box);
                 boxesContent.appendChild(fragment);
             });
+            box.addEventListener('click', () => show_card(item));
+
+  
         });
     } catch (err) {
         console.error(err.message);
@@ -47,7 +56,7 @@ function sortedLists(data) {
     while (p) {
         p = false;
         for(let i = 0; i < data.length - 1; i++) {
-            if (data[i].algo > data[i + 1].algo) { // Adjust comparison based on property
+            if (data[i].algo > data[i + 1].algo) { 
                 const aux = data[i];
                 data[i] = data[i + 1];
                 data[i + 1] = aux;
@@ -57,3 +66,13 @@ function sortedLists(data) {
     }
     return data;
 }
+
+
+
+function hide_card() {
+    document.querySelector('.card').style.display = 'none';
+    document.querySelector('.card-content').innerHTML = '';
+    window.location.href = '#';
+}
+
+
