@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="blue">
     <title>Elena Algorithme</title>
     <link rel="stylesheet" href="algo.css">
     <link rel="stylesheet" href="/fonts/fonts.css">
@@ -33,8 +34,7 @@
             <li class="link"><a class="link home-links-menu" href="/home/">Home <i class="fa fa-home"></i></a></li>
         </div>
         <div class="content">
-            <main class="element-box">  
-            </main>
+            <main class="element-box"></main>
         </div>
         <div class="footer">
             <span class="name"><span class="fgh-gg-s"><i class="fa-regular fa-copyright"></i></span> <span class="algo">ELena ALGO</span>
@@ -46,6 +46,129 @@
     <script src="/js/scrole-down.js"></script>
     <script src="/js/params-links.js"></script>
     <script src="/js/algo_id.js"></script>
+    <script src="/js/functions.js"></script>
+    <script type="module" src="/js/message.js"></script>
+    <script type="module">
+        import { create_css,create_html_element,add_to_DOM } from 'https://create-page-with-js.netlify.app/create-page.js';
+        
+        create_css({
+            selector:".res-code",
+            css: {
+                padding: "20px",
+                background: "#333",
+                borderRadius:'5px',
+                fontFamily: 'Arial, console',
+                color:'white'
+            }
+        })
+        const show_img = create_html_element(
+            {
+                tag:"div",
+                attributes: {
+                    class:"show-img",
+                }
+            }
+        )
+        add_to_DOM({
+            parent:"body",
+            element:show_img
+        })
+        create_css({
+            selector:".show-img",
+            css: {
+                position: 'fixed',
+                top: '0',
+                left: "0",
+                width: "100%",
+                height: "100%",
+                zIndex: '1000',
+                backgroundColor: 'rgba(0,0,0,0.7)',
+                display: 'none',
+                flexDirection: "column",
 
+            }
+        })
+        const icon_xmark = create_html_element(
+            {
+                tag:"i",
+                attributes: {
+                    class:"fa fa-xmark",
+                    id :'xmark-icon'
+                }
+            }
+        )
+        const hide_icon_div = create_html_element(
+            {
+                tag:'div',
+                attributes:{
+                    class:'hide-icon-div',
+                },
+                children: icon_xmark
+            }
+        )
+        add_to_DOM({
+            parent:'.show-img',
+            element:hide_icon_div
+        })
+        create_css({
+            selector:".hide-icon-div",
+            css: {
+                display: "flex",
+                justifyContent: "flex-end",
+                alignItems: "center",
+                padding: "10px",
+            }
+        })
+        create_css({
+            selector:"#xmark-icon",
+            css: {
+                display: "flex",
+                justifyContent: "flex-end",
+                alignItems: "center",
+                padding: "10px",
+                color: 'red',
+                fontSize:"25px",
+                cursor: "pointer",
+                textShadow: '0 0 15px white'
+            }
+        })
+        hide_icon_div.addEventListener('click', () => {
+            show_img.style.display = "none";
+            const imgElement = document.querySelector("#algo-img");
+            if (imgElement) {
+                imgElement.src = ""; 
+            }
+        });
+        
+
+        const img = create_html_element(
+            {
+                tag:'img',
+                attributes:{
+                    id: 'algo-img',
+                    src: '',
+                    alt: 'algo-rithme'
+                }
+            }
+        )
+        add_to_DOM({
+            parent:'.show-img',
+            element:img
+        })
+        create_css(
+            {
+                selector:"#algo-img",
+                css: {
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    objectPosition: "center",
+                    borderRadius: "10px",
+                    boxShadow: '0 0 15px rgba(0,0,0,0.3)'
+                }
+            }
+        )
+        
+    </script>
 </body>
 </html>

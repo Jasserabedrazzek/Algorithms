@@ -10,7 +10,8 @@
         "title": "Affichage",
         "code_python": "print (2) -> 2\nprint ('bac 2024') -> bac 2024",
         "code_algo": "ecrire(2)\necrire('bac 2024')",
-        "comments": "Pour renvoier deux messages \u00e9crits avec des commandes print () distinctes sur la m\u00eame ligne, \non utilise le syntaxe suivant :\n    print  ('bac 2024', end = '')\n    print  ('Admis')\nDans ce cas le programme donne \uf0e0 bac 2024Admis\n"
+        "comments": "Pour renvoier deux messages \u00e9crits avec des commandes print () distinctes sur la m\u00eame ligne, \non utilise le syntaxe suivant :\n    print  ('bac 2024', end = '')\n    print  ('Admis')\nDans ce cas le programme donne \uf0e0 bac 2024Admis\n",
+        "use_function" : "Affichage(`2\nbac 2024`)"
     },
     {
         "id": "1635936684",
@@ -23,7 +24,8 @@
         "title": "Affectation",
         "code_python": "x = 9.96\nch = 'bac'\nn = 10",
         "code_algo": "x< <- 9.96\nch <- 'bac'\nn <- 10",
-        "comments": "Cette op\u00e9ration est dite affectation : C\u2019est-\u00e0-dire mettre la valeur 10 dans la variable n (on dit n \nre\u00e7oit 10 ou n prend la valeur 10).\n\nPour afficher un message, il faut l\u2019\u00e9crire entre deux c\u00f4tes '', en informatique il y\u2019a diff\u00e9rence \nd\u2019\u00e9crire : Ecrire(n) et Ecrire ('n') ainsi que print (n) et print ('n')\n\n\nDans le premier cas (sans apostrophes) signifie qu\u2019on veut afficher le contenu de la variable n \ndonc le programme affiche 10 alors qu\u2019avec les deux apostrophes le programme affichera la \nlettre n tel qu\u2019elle est \u00e9crite.\n"
+        "comments": "Cette op\u00e9ration est dite affectation : C\u2019est-\u00e0-dire mettre la valeur 10 dans la variable n (on dit n \nre\u00e7oit 10 ou n prend la valeur 10).\n\nPour afficher un message, il faut l\u2019\u00e9crire entre deux c\u00f4tes '', en informatique il y\u2019a diff\u00e9rence \nd\u2019\u00e9crire : Ecrire(n) et Ecrire ('n') ainsi que print (n) et print ('n')\n\n\nDans le premier cas (sans apostrophes) signifie qu\u2019on veut afficher le contenu de la variable n \ndonc le programme affiche 10 alors qu\u2019avec les deux apostrophes le programme affichera la \nlettre n tel qu\u2019elle est \u00e9crite.\n",
+        "use_function":""
     },
     {
         "id": "4516683029",
@@ -36,7 +38,8 @@
         "title": "Saisie de donn\u00e9e",
         "code_python": "ch = input('Donner un nom non vide: ')\nn = input('donner un entier : ')\n",
         "code_algo": "ecrire('Donner un nom non vide: ')\nlire(ch)\n\necrire('donner un entier : ')\nlire(n)",
-        "comments": "Python nous a permis de diminuer le nombre des lignes et de combiner l\u2019affichage du \nmessage avec le saisi du donn\u00e9.\nEt donc \u00e7a sera : ch=input ('Donner un nom non vide') au lieu d\u2019\u00e9crire : print  (\"Donner un entier\")\nn = input ()\n"
+        "comments": "Python nous a permis de diminuer le nombre des lignes et de combiner l\u2019affichage du \nmessage avec le saisi du donn\u00e9.\nEt donc \u00e7a sera : ch=input ('Donner un nom non vide') au lieu d\u2019\u00e9crire : print  (\"Donner un entier\")\nn = input ()\n",
+        "use_function": ""
     },
     {
         "id": "4908912092",
@@ -49,7 +52,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "from math import sqrt\nx = 4\nr = sqrt(x)\nprint (r)\n",
         "code_algo": "x <- 4\nr <- racine_carr\u00e9e(x)\necrire(r)",
-        "comments": null
+        "comments": null,
+        "use_function":"Racine(16)"
     },
     {
         "id": "5922799518",
@@ -62,7 +66,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "x = -4\na = abs(x)\nprint (a)\n",
         "code_algo": "x <- -4\na <- abs(x)\necrire(a)\n",
-        "comments": null
+        "comments": null,
+        "use_function":"Abs(-4)"
     },
     {
         "id": "5105231701",
@@ -75,7 +80,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "import math\n\nresult = math.trunc(2.6)\nprint (result)  # Output: 2\n\n",
         "code_algo": "result <- Tronc(2.6)\necrire(result) \n#output: 2",
-        "comments": "Type du r\u00e9sultat : entier"
+        "comments": "Type du r\u00e9sultat : entier",
+        "use_function":"Tronc(2.6)"
     },
     {
         "id": "2739915426",
@@ -88,7 +94,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "x = 2.6 # > 0.5\ny = 2.5 # = 0.5\nz = 2.4 # < 0.5\nprint (round(x))\nprint (round(y))\nprint (round(z))\n",
         "code_algo": "x <- 2.6 # > 0.5\ny <- 2.5 # = 0.5\nz <- 2.4 # < 0.5\necrire(Arrondi (x) )\necrire(Arrondi (y) )\necrire(Arrondi (z) )\n\n",
-        "comments": "x = 5.5 -> arrondi(x) = 5 \nx = 5.51 -> arrondi(x) = 6"
+        "comments": "x = 5.5 -> arrondi(x) = 5 \nx = 5.51 -> arrondi(x) = 6",
+        "use_function":"Arrondi(2.6)"
     },
     {
         "id": "4902817087",
@@ -101,7 +108,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "n = pow(2,4)\nprint (n)\n",
         "code_algo": "n <- pow(2,4)\necrire(n)",
-        "comments": null
+        "comments": null,
+        "use_function":"Pow(2,4)"
     },
     {
         "id": "2073427509",
@@ -114,7 +122,9 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "from random import *\n\nn = randint(1,10)\nprint (n)\n",
         "code_algo": "n <- al\u00e9a(1,10)\necrire(n)\n",
-        "comments": "intervale [i,f]"
+        "comments": "intervale [i,f]",
+        "use_function":"Random_integer_number()"
+        
     },
     {
         "id": "4623735924",
@@ -127,7 +137,8 @@
         "title": "Les fonctions sur les types num\u00e9riques",
         "code_python": "from random import *\n\nn = uniform(1,10)\nprint (n)\n",
         "code_algo": "n <- al\u00e9a(1,10)\necrire(n)\n",
-        "comments": "donner un nombre reel "
+        "comments": "donner un nombre reel ",
+        "use_function":"Random_float_number()"
     },
     {
         "id": "2403790751",
@@ -140,7 +151,8 @@
         "title": "Les structures de  contr\u00f4le conditionnelles",
         "code_python": "if Condition : \n R\u00e9sultat1\nelif condition 2 :\n R\u00e9sultat 2 \nelif condition 3 :\n R\u00e9sultat 3\n.\n.\n.\nelif condition n-1 :\n R\u00e9sultat n-1\nelse  :\n R\u00e9sultat n",
         "code_algo": "Si Condition alors R\u00e9sultat 1\nSinon si Condition 2 alors R\u00e9sultat 2\nSinon Si Condition 3 alors R\u00e9sultat 3\n.\n.\n.\nSinon si Condition n-1 alors R\u00e9sultat n-1\nSinon R\u00e9sultat n\nFin Si",
-        "comments": "On n\u2019\u00e9crit jamais une condition avec sinon (else )"
+        "comments": "On n\u2019\u00e9crit jamais une condition avec sinon (else )",
+        "use_function":""
     },
     {
         "id": "6764320979",
@@ -153,7 +165,8 @@
         "title": "Les symboles de comparaison",
         "code_python": "print (24%10) # 4\nprint (4%2) #reste = 0\n",
         "code_algo": "ecrire(24 mod 10) # 4\necrire(4 mod 2) #reste = 0\n",
-        "comments": "Il est \u00e9vident de penser \u00e0 utiliser la division euclidienne de l\u2019entier donn\u00e9 par l\u2019utilisateur par \n10. "
+        "comments": "Il est \u00e9vident de penser \u00e0 utiliser la division euclidienne de l\u2019entier donn\u00e9 par l\u2019utilisateur par \n10. ",
+        "use_function":"Mod(24,10)"
     },
     {
         "id": "2802919876",
@@ -166,7 +179,8 @@
         "title": "Les symboles de comparaison",
         "code_python": "print (24//10) # 4\nprint (4//2) #quotient = 2\n",
         "code_algo": "ecrire(24 div 10) # 2\necrire(4 div 2) #quotient = 2\n",
-        "comments": "L\u2019id\u00e9e est de s\u00e9parer le chiffre d\u2019unit\u00e9 du chiffre de dizaine.\nIl est \u00e9vident de penser \u00e0 utiliser la division euclidienne de l\u2019entier donn\u00e9 par l\u2019utilisateur par \n10."
+        "comments": "L\u2019id\u00e9e est de s\u00e9parer le chiffre d\u2019unit\u00e9 du chiffre de dizaine.\nIl est \u00e9vident de penser \u00e0 utiliser la division euclidienne de l\u2019entier donn\u00e9 par l\u2019utilisateur par \n10.",
+        "use_function":"DIV(24,10)"
     },
     {
         "id": "1233522794",
@@ -179,7 +193,8 @@
         "title": "Les symboles de comparaison",
         "code_python": "a = 3\nb = 5\nif a == b:\n\tprint ( True  )\nelse :\n\tprint ( False )\n",
         "code_algo": "a <- 3\nb <- 5\nsi a = b alors\n\tecrire(Vrai)\nsinon\n\tecrire(Faux)\n",
-        "comments": null
+        "comments": null,
+        "use_function":"comparaison(3,5)"
     },
     {
         "id": "9641717889",
@@ -192,7 +207,8 @@
         "title": "Les symboles de comparaison",
         "code_python": "a = 5\nb = 6\nif a and b:\n\tprint ( True  )\nelse :\n\tprint ( False )\n",
         "code_algo": "a <- 3\nb <- 5\nsi a et b alors\n\tecrire(Vrai)\nsinon\n\tecrire(Faux)\n",
-        "comments": null
+        "comments": null,
+        "use_function":""
     },
     {
         "id": "9175315732",
@@ -205,7 +221,8 @@
         "title": "Les symboles de comparaison",
         "code_python": "a = 5\nb = 6\nif a or b:\n\tprint ( True  )\nelse :\n\tprint ( False )\n",
         "code_algo": "a <- 3\nb <- 5\nsi a ou b alors\n\tecrire(Vrai)\nsinon\n\tecrire(Faux)\n",
-        "comments": null
+        "comments": null,
+        "use_function":""
     },
     {
         "id": "7326798955",
@@ -219,6 +236,7 @@
         "code_python": "ch = 'Bac 2024 Admis'\nprint (ch)\n",
         "code_algo": "ch <- 'Bac 2024 Admis'\necrire(ch)\n",
         "comments": "L\u2019outil ch[i] tel que les i sont indices des caract\u00e8res num\u00e9rot\u00e9s de 0 \u00e0 long (ch) \u2013 1, nous \npermet d\u2019acc\u00e9der en mode lecture \u00e0 chaque caract\u00e8re de la chaine"
+        ,"use_function":""
     },
     {
         "id": "4061629326",
@@ -231,7 +249,8 @@
         "title": "Extraction d\u2019une sous cha\u00eene",
         "code_python": "ch1 = 'bac math 2024'\nch2 = ch1[0:3]\nprint (ch2)\n",
         "code_algo": "ch1 <- 'bac math 2024'\nch2 <- ch1[0:3]\necrire(ch2)\n",
-        "comments": "ch[id : if ] \nid : indice de d\u00e9but \nif : indice de fin \u2013 1\nch = \u2019python\u2019 \nch[0 : 3] \uf0e0 donne \u2019 pyt \u2019\nch[2 :] \uf0e0 donne \u2019 thon \u2019\nch[-2 :] \uf0e0 donne \u2019 on \u2019\nch[: :2] \uf0e0 donne \u2019 pto \u2019\nch[: :- 2] \uf0e0 donne \u2019 nhy \u2019\n3.4. Concat\u00e9nation et multiplication\n\"formation\"+\"python\"\uf0e0 donne \"formationpython\"\nCh = \"a\" * 5 \uf0e0 donne ch = \"aaaaa\""
+        "comments": "ch[id : if ] \nid : indice de d\u00e9but \nif : indice de fin \u2013 1\nch = \u2019python\u2019 \nch[0 : 3] \uf0e0 donne \u2019 pyt \u2019\nch[2 :] \uf0e0 donne \u2019 thon \u2019\nch[-2 :] \uf0e0 donne \u2019 on \u2019\nch[: :2] \uf0e0 donne \u2019 pto \u2019\nch[: :- 2] \uf0e0 donne \u2019 nhy \u2019\n3.4. Concat\u00e9nation et multiplication\n\"formation\"+\"python\"\uf0e0 donne \"formationpython\"\nCh = \"a\" * 5 \uf0e0 donne ch = \"aaaaa\"",
+        "use_function":"Sous_chaine(\"bac math 2024\",0,3)"
     },
     {
         "id": "1204438996",
@@ -244,7 +263,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "a = ord('a')\nA = ord('A')\nprint (a)\nprint (A)\n",
         "code_algo": "a <- ord('a')\nA <- ord('A')\necrire(a)\necrire(A)\n",
-        "comments": "a = ord('a') # -> 97\nz = ord('z') # -> 122\nA = ord('A') # -> 65\nZ = ord('Z') # -> 90 \nprint (a)\nprint (z)\nprint (A)\nprint (Z)\n"
+        "comments": "a = ord('a') # -> 97\nz = ord('z') # -> 122\nA = ord('A') # -> 65\nZ = ord('Z') # -> 90 \nprint (a)\nprint (z)\nprint (A)\nprint (Z)\n",
+        "use_function":"Ord('a')"
     },
     {
         "id": "5883057174",
@@ -257,7 +277,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "chr(65) -> \u2019A\u2019\nchr(97) -> \u2019a\u2019",
         "code_algo": "Chr(65) -> \u2019A\u2019\nChr(97) -> \u2019a\u2019",
-        "comments": null
+        "comments": null,
+        "use_function":"Chr(65)"
     },
     {
         "id": "7274725113",
@@ -270,7 +291,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "ch = 'bac 2024'\nl = len(ch)\nprint (l)\n",
         "code_algo": "ch <- 'bac 2024'\nl <- long(ch)\necrire(l)\n",
-        "comments": ""
+        "comments": "",
+        "use_function":"Long('bac 2024')"
     },
     {
         "id": "7820206660",
@@ -283,7 +305,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "Ch1='2'\nCh2 = '2020'\nPos (ch1,ch2) # = 0",
         "code_algo": "Ch1<-\u20192\u2019\nCh2 <- \u20192020\u2019\nPos (ch1,ch2) # = 0",
-        "comments": "ch1 = 'bac'\nch2 = 'fac'\np = ch1.find(ch2[0]) # retourner -1\n"
+        "comments": "ch1 = 'bac'\nch2 = 'fac'\np = ch1.find(ch2[0]) # retourner -1\n",
+        "use_function":"Pos('2','2020')"
     },
     {
         "id": "5520572823",
@@ -296,7 +319,8 @@
         "title": "Sous_cha\u00eene (ch, p, n)",
         "code_python": "ch = 'informatique'\nch2 = ch[2:5]\nprint (ch2)\n#le programme affiche : for\n",
         "code_algo": "ch <- 'informatique'\nch2 <- ch[2:5]\necrire(ch2)",
-        "comments": "print ('python'[-1]) # n\n"
+        "comments": "print ('python'[-1]) # n\n",
+        "use_function":"Sous_chaine('informatique',2,5)"
     },
     {
         "id": "3398605665",
@@ -309,7 +333,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "ch = 'informatique'\nch2 = ch[:4] + ch[7:]\nprint  (ch2)\n",
         "code_algo": "ch <- 'informatique'\nch2 <- ch[:4] + ch[7:]\necrire (ch2)\n",
-        "comments": null
+        "comments": null,
+        "use_function":"efface('informatique',4,7)"
     },
     {
         "id": "7604889972",
@@ -322,7 +347,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "n = 2020\nch = str(n) # \"2024\"",
         "code_algo": "Ch <- Convch(2020) # \"2024\"\n",
-        "comments": "  "
+        "comments": "  ",
+        "use_function":"Convch(2024)"
     },
     {
         "id": "7559698425",
@@ -335,7 +361,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "ch = '24'\nn = int(ch)\nprint (n)\n",
         "code_algo": "ch <- '24'\nn <- valeur(ch)\necrire(n)\n",
-        "comments": "Convertir une cha\u00eene par un valeur"
+        "comments": "Convertir une cha\u00eene par un valeur",
+        "use_function":"Valeur('24','entier')"
     },
     {
         "id": "5975657591",
@@ -348,7 +375,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "ch = 'bac math 2024'\nprint (ch.upper())\n",
         "code_algo": "ch <- 'bac math 2024'\necrire(majus(ch))\n",
-        "comments": "\u2019python\u2019.upper() -> donne \u2019PYTHON\u2019"
+        "comments": "\u2019python\u2019.upper() -> donne \u2019PYTHON\u2019",
+        "use_function":"Majus('bac math 2024')"
     },
     {
         "id": "9902136453",
@@ -361,7 +389,8 @@
         "title": "Les structures de  contr\u00f4le it\u00e9ratives",
         "code_python": "for i in range (5):\n\tprint ('python')\n",
         "code_algo": "pour i de 0 \u00e0 4 faire\n\tecrire('python')\n",
-        "comments": "La variable i d\u00e9signe le compteur de la boucle : par d\u00e9faut i commence du 0 jusqu\u2019\u00e0 n-1, \nl\u2019incr\u00e9mentation du compteur est automatique avec un pas = 1"
+        "comments": "La variable i d\u00e9signe le compteur de la boucle : par d\u00e9faut i commence du 0 jusqu\u2019\u00e0 n-1, \nl\u2019incr\u00e9mentation du compteur est automatique avec un pas = 1",
+        "use_function":"Boucle_Pour(0,5)"
     },
     {
         "id": "7890348954",
@@ -374,7 +403,8 @@
         "title": "Les structures de  contr\u00f4le it\u00e9ratives",
         "code_python": "ok =  False \ni = 0\n\nwhile ok ==  False :\n\tif i == 10:\n\t\tok =  True  \n\telse :\n\t\ti = i +1\n",
         "code_algo": "ok <- faux\ni <- 0\n\ntantque ok = faux faire\n\tsi i = 10 alors\n\t\tok <- vrai\n\tsinon\n\t\ti <- i +1\n    fin si\nfin tantque",
-        "comments": null
+        "comments": null,
+        "use_function":""
     },
     {
         "id": "5658909779",
@@ -387,7 +417,8 @@
         "title": "Les structures de  contr\u00f4le it\u00e9ratives",
         "code_python": "i = 0\nwhile not i = 5:\n\ti = i + 1\n        ",
         "code_algo": "i <- 0\nR\u00e9p\u00e9ter\n\ti <- i + 1\n Jusqu\u2019\u00e0 i = 5",
-        "comments": "\n"
+        "comments": "\n",
+        "use_function":""
     },
     {
         "id": "4601815660",
@@ -400,7 +431,8 @@
         "title": "Tableau",
         "code_python": "from numpy import *\n\nt = array([int]*5)\nfor i in range (5):\n\tt[i] = int(input(\"donner un entier: \"))\n",
         "code_algo": "pour i de 0 \u00e0 4 faire\n\tecrire(\"donner un entier: \")\n\tlire(t[i])",
-        "comments": "La d\u00e9claration d\u2019un tableau permet d\u2019associer \u00e0 un nom une zone \nm\u00e9moire compos\u00e9e d\u2019un certain nombres de cases m\u00e9moires de m\u00eame \ntype. \nSyntaxe : \nVariable identificateur : tableau[indice_min .. indice_max] de type \nOu bien \nVariable identificateur : tableau[taille] de type \nNotes : \n\uf0b7 Le premier \u00e9l\u00e9ment d\u2019un tableau porte l\u2019indice z\u00e9ro ou l\u2019indice 1 \nselon les langages. \n* La valeur d\u2019un indice doit \u00eatre un nombre entier. \n* La valeur d\u2019un indice doit \u00eatre inf\u00e9rieure ou \u00e9gale au nombre \nd\u2019\u00e9l\u00e9ments du tableau. Par exemple, avec le tableau tab[1 .. 20], il \nest impossible d'\u00e9crire tab[0] et tab[21]. Ces expressions font \nr\u00e9f\u00e9rence \u00e0 des \u00e9l\u00e9ments qui n'existent pas. \n"
+        "comments": "La d\u00e9claration d\u2019un tableau permet d\u2019associer \u00e0 un nom une zone \nm\u00e9moire compos\u00e9e d\u2019un certain nombres de cases m\u00e9moires de m\u00eame \ntype. \nSyntaxe : \nVariable identificateur : tableau[indice_min .. indice_max] de type \nOu bien \nVariable identificateur : tableau[taille] de type \nNotes : \n\uf0b7 Le premier \u00e9l\u00e9ment d\u2019un tableau porte l\u2019indice z\u00e9ro ou l\u2019indice 1 \nselon les langages. \n* La valeur d\u2019un indice doit \u00eatre un nombre entier. \n* La valeur d\u2019un indice doit \u00eatre inf\u00e9rieure ou \u00e9gale au nombre \nd\u2019\u00e9l\u00e9ments du tableau. Par exemple, avec le tableau tab[1 .. 20], il \nest impossible d'\u00e9crire tab[0] et tab[21]. Ces expressions font \nr\u00e9f\u00e9rence \u00e0 des \u00e9l\u00e9ments qui n'existent pas. \n",
+        "use_function":""
     },
     {
         "id": "9850244258",
@@ -413,7 +445,8 @@
         "title": "Sous-Programme",
         "code_algo": "Proc\u00e9dure Saisie ( @ n : entier) \nD\u00e9but\nR\u00e9p\u00e9ter \n\tEcrire(\u2019\u2019 Donner un entier\u2019\u2019)\n\tLire (n)\nJusqu\u2019\u00e0 (n>=0) et (n<=20)\nFin ",
         "code_python": "def Saisie():\n    global n\n    n = int(input('donner un entier: '))\n    while not 0<=n<=20:\n\tn = int(input('donner un entier: '))\n\nSaisie()",
-        "comments": "Si le contenu d\u2019une une variable globale dans une proc\u00e9dure change en passant par le \ntraitement, on \u00e9crit \u00ab @ \u00bb avant la variable dans l\u2019ent\u00eate de la d\u00e9claration de la proc\u00e9dure (on \nappelle \u00e7a passage par variable) sinon on n\u2019\u00e9crit rien (on appelle \u00e7a passage par valeur)\nLa notion du mode de passage est valable seulement pour les proc\u00e9dures."
+        "comments": "Si le contenu d\u2019une une variable globale dans une proc\u00e9dure change en passant par le \ntraitement, on \u00e9crit \u00ab @ \u00bb avant la variable dans l\u2019ent\u00eate de la d\u00e9claration de la proc\u00e9dure (on \nappelle \u00e7a passage par variable) sinon on n\u2019\u00e9crit rien (on appelle \u00e7a passage par valeur)\nLa notion du mode de passage est valable seulement pour les proc\u00e9dures.",
+        "use_function":""
     },
     {
         "id": "4358898044",
@@ -426,7 +459,8 @@
         "title": "Sous-Programme",
         "code_python": "def recherch(x):\n\tok =  False \n\tfor i in range (n):\n\t\tif x == t[i]:\n\t\t\t\tok =  True  \n\treturn ok",
         "code_algo": "fonction recherch(x:entier): booleen\n    debut\n    ok = faux\n    pour i de 0 \u00e0 n-1 faire\n        si x = t[i]alors\n            ok = vrai\n        fin si\n    fin pour\n    retourner ok\n    fin ",
-        "comments": "On appelle x param\u00e8tre formels c\u2019est-\u00e0-dire il prend un nom de variable quelconque lors de la \nd\u00e9claration du sous-programme mais apr\u00e8s dans l\u2019appelle de la fonction, le programme \nfonctionne r\u00e9ellement avec m et n qui sont des param\u00e8tres effectifs. \nLa notion des param\u00e8tres formels et effectifs est valable aussi pour les proc\u00e9dures"
+        "comments": "On appelle x param\u00e8tre formels c\u2019est-\u00e0-dire il prend un nom de variable quelconque lors de la \nd\u00e9claration du sous-programme mais apr\u00e8s dans l\u2019appelle de la fonction, le programme \nfonctionne r\u00e9ellement avec m et n qui sont des param\u00e8tres effectifs. \nLa notion des param\u00e8tres formels et effectifs est valable aussi pour les proc\u00e9dures",
+        "use_function":"recherche(2,[5,4,8,9,14,7,10,2])"
     },
     {
         "id": "7019168326",
@@ -439,7 +473,8 @@
         "title": "Les m\u00e9thodes",
         "code_python": "x = '225'\nprint (x.isnumeric()) #  True  \n\nx = \"22a5\"\nprint (x.isnumeric()) #  False \n\n",
         "code_algo": "x <- '225'\necrire(estnum(x)) # vrai\n\nx <- \"22a5\"\necrire(estnum(x)) # faux\n\n",
-        "comments": "type estnum : booleen {vrai ou faux)"
+        "comments": "type estnum : booleen {vrai ou faux)",
+        "use_function":"Estnum('255')"
     },
     {
         "id": "4363026331",

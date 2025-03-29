@@ -9,10 +9,10 @@ const list = [
 ]
 
 function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min; // Inclusive of both min and max
+    return Math.floor(Math.random() * (max - min + 1)) + min;  
 }
 
-const searchAlgo = document.querySelector('.search-algo')
+const searchAlgo = document.querySelector('#search');
 
 window.onload = () => {
     l = list.length

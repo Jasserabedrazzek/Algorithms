@@ -15,11 +15,9 @@ function searchJSON() {
     resultsDiv.innerHTML = "";
     if (query.length ==0) {
         resultsDiv.style.display = "none";
-        imageExamples.style.display = "flex";
     }
     else {
         resultsDiv.style.display = "flex";
-        imageExamples.style.display = "none";
     }
     if (!query || !jsonData) return;
 
@@ -30,7 +28,7 @@ function searchJSON() {
         if (item.title && item.description && item.url && item.algo) {
         const titleLower = item.title.toLowerCase();
         const descriptionLower = item.description.toLowerCase();
-        const algoLower = item.algo.toLowerCase(); // Search in the algo field
+        const algoLower = item.algo.toLowerCase(); 
 
         if (
             titleLower.includes(query) ||
@@ -54,7 +52,7 @@ function searchJSON() {
         if (item.name && item.exercise && item.link && item.correction) {
         const nameLower = item.name.toLowerCase();
         const exerciseLower = item.exercise.toLowerCase();
-        const algoLower = item.correction.toLowerCase(); // Search in the correction field (algo)
+        const algoLower = item.correction.toLowerCase();
 
         if (
             nameLower.includes(query) ||

@@ -71,7 +71,7 @@ function sortedLists(data) {
 
 function hide_card() {
     document.querySelector('.card').style.display = 'none';
-    document.querySelector('.card-content').innerHTML = '';
+    document.querySelector('.card-content').src = '';
     window.location.href = '#';
 }
 

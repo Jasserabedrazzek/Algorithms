@@ -35,14 +35,14 @@
         </div>
         <div class="content">
             <div class="input-search">
-                <input type="search"  oninput="searchJSON()" id="search" class="search-algo" placeholder="Search for an algorithm">
-                <div id="result">
-                    
-                </div>
+                <input type="search" readonly onclick="showContainer()"  class="search-algo" placeholder="Cliquez pour rechercherh">
+                
             </div>
             <div class="images">
                 <img src="/images/img1.png" id="image-exempale" class="img-exmples" loading="lazy" alt="">
             </div>
+            <br>
+            
             
         </div>
         <div class="footer">
@@ -52,6 +52,7 @@
                 <a href="https://www.instagram.com/jasserabedrazzek/" target="_blank"><i class="fa-brands soc in fa-instagram"></i></a>
                 <a href="https://www.tiktok.com/@jasser_abr" target="_blank"><i class="fa-brands soc tk fa-tiktok"></i></a>
             </div>
+            <!--<a href="#" class="link">Téléverser un fichier et laisser un commentaire</a>-->
             <hr class="line">
             <span class="name"><span class="fgh-gg-s"><i class="fa-regular fa-copyright"></i></span> <span class="algo">ELena ALGO</span>
             <span class="rithme">RITHME</span> <span class="fgh-gg-s">, BAC TN 2024 - <script>document.write(new Date().getFullYear())</script></span></span>
@@ -62,7 +63,6 @@
     <script src="/js/search.js"></script>
     <script src="/js/params-links.js"></script>
     <script src="/js/open-menu.js"></script>
-    <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WFPTVY29Q"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -70,6 +70,195 @@
           gtag('js', new Date());
         
           gtag('config', 'G-1WFPTVY29Q');
+    </script>
+    <script type="module" >
+        import { create_html_element,add_to_DOM,create_css } from 'https://create-page-with-js.netlify.app/create-page.js';
+        const div_res = create_html_element(
+            {
+                tag:'div',
+                attributes:{
+                    class:'results-container',
+                    id:'results-container',
+                },
+            }
+        )
+        add_to_DOM(
+            {
+                parent:"body",
+                element:div_res,
+            }
+        )
+        const hide_icon = create_html_element(
+            {
+                tag:'i',
+                attributes:{
+                    class:'fa fa-xmark',
+                    id:'hide-icon',
+                    style:"color:red"
+                },
+            }
+        ) 
+        const button_hide = create_html_element(
+            {
+                tag:'button',
+                attributes:{
+                    class:'hide-button',
+                    id:'hide-button',
+                    onclick:"hideContainer()"
+                },
+                children:hide_icon,
+            }
+        )
+        const hide_div = create_html_element(
+            {
+                tag:'div',
+                attributes:{
+                    class:'hide-icon-div',
+                },
+                children:button_hide,
+            }
+        )
+        const search_input = create_html_element(
+            {
+                tag:'input',
+                attributes:{
+                    type:'search',
+                    id:'search',
+                    class:'search-algo',
+                    placeholder:"Search for an algorithm",
+                    oninput: "searchJSON()"
+                },
+            }
+        )
+
+        add_to_DOM({
+            parent:".results-container",
+            element:hide_div,
+        })
+        
+        const result_content = create_html_element(
+            {
+                tag:'div',
+                attributes:{
+                    class:'results-content',
+                    id:'results-content',
+                },
+            }
+        )
+        add_to_DOM(
+            {
+                parent:".results-container",
+                element: result_content,
+            }
+        )
+        add_to_DOM({
+            parent: '.results-content',
+            element: search_input
+        })
+        create_css({
+            selector:".results-content",
+            css: {
+                display:"flex",
+                flexDirection: "column",
+                padding: "10px",
+                gap:'10px',
+                height: "100%",
+            }
+        })
+        const result = create_html_element({
+            tag: 'div',
+            attributes: {
+                class: 'result',
+                id:'result',
+            },
+        })
+        add_to_DOM({
+            parent: '.results-content',
+            element: result,
+        })
+        create_css(
+            {
+                selector:'.results-container',
+                css: {
+                    position: 'fixed',
+                    width:'100%',
+                    height:'100%',
+                    top: '0',
+                    left: '0',
+                    background: 'rgba(0,0,0,0.5)',
+                    display: 'none',
+                    flexDirection: 'column',
+                }
+            }
+        )
+        create_css(
+            {
+                selector: '.hide-icon-div',
+                css:{
+                    padding:'15px',
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                }
+            }
+        )
+        create_css(
+            {
+                selector: '.hide-button',
+                css:{
+                    padding:'7px',
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                    border:0,
+                    outline:0,
+                    background: 'transparent',
+                    fontSize: '1.5em',
+                    cursor: 'pointer',
+                    textShadow: '0 0 10px white',
+                }
+            }
+        )
+        const version = create_html_element(
+            {
+                tag: 'div',
+                attributes: {
+                    class:'version',
+                    id:'version',
+                },
+                children : 'v 1.0.5',
+            }
+
+        )
+        add_to_DOM({
+            element: version,
+            parent: 'body',
+        })
+        create_css({
+            selector: '.version',
+            css: {
+                position: 'fixed',
+                bottom: '10px',
+                right: '10px',
+                color: 'white',
+                fontSize: '1em',
+                fontWeight: 'bold',
+                backgroundColor: '#111',
+                padding: '7px',
+                borderRadius: '5px',
+                boxShadow: '0 0 10px black',
+                
+            }
+        })
+    </script>
+    <script>
+        function hideContainer() {
+            document.getElementById('results-container').style.display = 'none';
+            document.getElementById('search').value = '';
+            document.getElementById("result").style.display = 'none';
+        }
+        function showContainer() {
+            document.getElementById('results-container').style.display = 'flex';
+        }
+        
     </script>
 </body>
 </html>

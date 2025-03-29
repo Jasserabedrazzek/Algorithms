@@ -228,10 +228,8 @@ body {
     flex-direction: column;
 }
 .editor {
-
     display: flex;
     flex-direction: column;
-    
 }
 .code-title {
     background-color: #777;
@@ -239,7 +237,10 @@ body {
     color: #fff;
     font-family: 'Courier New', Courier;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
 }
+
 .code {
     background-color: #10111a;
     padding: 15px;
@@ -256,6 +257,7 @@ body {
 .img {
     border: 1px solid #000;
     border-radius: 15px;
+    cursor: pointer;
 }
 .vide {
     width: 25px;

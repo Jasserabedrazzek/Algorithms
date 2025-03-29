@@ -21,9 +21,24 @@
             </main>
         </div>
     </div>
+    
     <script src="/js/scrole-down.js"></script>
-    <script src="/js/params-links.js"></script>
     <script src="/js/algo_id.js"></script>
+    <script src="/js/functions.js"></script>
+    <script type="module" src="/js/message.js"></script>
+    <script type="module">
+        import { create_css } from 'https://create-page-with-js.netlify.app/create-page.js';
+        create_css({
+            selector:".res-code",
+            css: {
+                padding: "20px",
+                background: "#414441",
+                borderRadius:'10px',
+                fontFamily: 'Arial, console',
+                color:'white'
+            }
+        })
+    </script>
 
 </body>
 </html>
