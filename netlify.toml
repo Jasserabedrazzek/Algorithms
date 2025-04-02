@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/home/sitemap-home.xml"
+  to = "/home/sitemap-home.xml"
+  status = 200
+  force = true
