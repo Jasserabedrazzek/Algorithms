@@ -2,32 +2,30 @@
 
 ## Supported Versions
 
-Les versions suivantes de ce projet sont actuellement prises en charge avec des mises à jour de sécurité :
+The following versions of this project are currently supported with security updates:
 
-| Version | Supportée          |
-| ------- | ------------------ |
-| 5.1.x   | ✅ Oui             |
-| 5.0.x   | ❌ Non             |
-| 4.0.x   | ✅ Oui             |
-| < 4.0   | ❌ Non             |
+| Version | Supported |
+|---------|------------|
+| 5.1.x   | ✅ Yes     |
+| 5.0.x   | ❌ No      |
+| 4.0.x   | ✅ Yes     |
+| < 4.0   | ❌ No      |
 
 ## Reporting a Vulnerability
 
-Nous prenons la sécurité de ce projet très au sérieux. Si vous découvrez une vulnérabilité, veuillez suivre ces étapes :
+We take the security of this project very seriously. If you discover a vulnerability, please follow these steps:
 
-1. **Ne pas divulguer publiquement** : Pour éviter toute exploitation malveillante, ne publiez pas la vulnérabilité sur des forums publics ou les réseaux sociaux.
-2. **Signaler via notre formulaire sécurisé** : Veuillez soumettre votre signalement via notre [formulaire de signalement de vulnérabilités](#) (ajouter le lien de ton formulaire).
-3. **Informations requises** : Décrivez la vulnérabilité en détail, y compris :
-   - La version affectée
-   - Une preuve de concept (si possible)
-   - L’impact potentiel
-4. **Délai de réponse** : Nous accusons réception sous **48 heures** et vous tiendrons informé(e) de l'évolution de la correction.
-5. **Correction et divulgation** : Si la vulnérabilité est validée, un correctif sera déployé et une annonce sera faite une fois la mise à jour disponible.
+1. **Do not disclose publicly**: To prevent malicious exploitation, do not post the vulnerability on public forums or social media.
+2. **Report via our secure form**: Please submit your report through our [vulnerability reporting form](#). *(Replace # with your actual form link.)*
+3. **Provide required details**:
+   - The affected version
+   - A proof of concept (if possible)
+   - Potential impact
+4. **Response time**: We acknowledge reports within 48 hours and will keep you updated on the fix progress.
+5. **Fix & disclosure**: If the vulnerability is confirmed, a patch will be deployed, and an announcement will be made once the update is available.
 
-## Formation en Sécurité
+## Security Training
 
-Notre équipe inclut des experts en sécurité informatique et en développement sécurisé. Grâce à notre formation en **sécurité des applications web**, nous mettons en œuvre des pratiques robustes pour prévenir les attaques et assurer la protection des données.
+Our team includes experts in cybersecurity and secure development. We implement best practices for application security to prevent attacks and protect user data.
 
----
-
-Merci de contribuer à la sécurité de ce projet ! 🔒🚀
+Thank you for helping us keep this project secure! 🔒🚀
