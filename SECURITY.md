@@ -16,7 +16,7 @@ The following versions of this project are currently supported with security upd
 We take the security of this project very seriously. If you discover a vulnerability, please follow these steps:
 
 1. **Do not disclose publicly**: To prevent malicious exploitation, do not post the vulnerability on public forums or social media.
-2. **Report via our secure form**: Please submit your report through our [vulnerability reporting form](#). *(Replace # with your actual form link.)*
+2. **Report via our secure form**: Please submit your report through our [vulnerability reporting form](#). 
 3. **Provide required details**:
    - The affected version
    - A proof of concept (if possible)
