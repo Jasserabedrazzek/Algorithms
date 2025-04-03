@@ -1,1 +1,1 @@
-Sitemap: https://elena-algorithms.netlify.app/home/sitemap-home.xml
+Sitemap: https://elena-algorithms.netlify.app/home/sitemap.xml
