@@ -11,7 +11,12 @@ function Random_float_number() {
 }
 
 function Arrondi(x) {
-    return x.map(num => Math.round(num));
+    var res = '';
+    for (let i=0;i<x.length;i++) {
+        res += `${round(x)}<br>`;
+    }
+    return res;
+    //return x.map(num => Math.round(num));
 }
 
 function Convch(n) {
