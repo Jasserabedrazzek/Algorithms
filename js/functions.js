@@ -13,7 +13,7 @@ function Random_float_number() {
 function Arrondi(x) {
     var res = '';
     for (let i=0;i<x.length;i++) {
-        res += `${round(x)}<br>`;
+        res += `${round(Number(x))}<br>`;
     }
     return res;
     //return x.map(num => Math.round(num));
