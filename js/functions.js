@@ -13,7 +13,7 @@ function Random_float_number() {
 function Arrondi(x) {
     
     
-    return x.map(num => Math.round(num));
+    return x.map((num) => { return Math.round(num)});
 }
 
 function Convch(n) {
