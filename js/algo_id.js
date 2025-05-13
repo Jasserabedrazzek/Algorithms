@@ -1,3 +1,4 @@
+import CreateMessage from "./message.js";
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -66,10 +67,11 @@ function get_data_from_json() {
         var element_data = data.find(item => item.id === get_id_from_url()[0]);
         const elementBox = document.querySelector('.element-box');
         if (!elementBox) {
-            showErrorMessageBox('Element box not found');
+            console.error('Element box not found');
+            CreateMessage("error","'Element'","'Element box not found'");
             return;
         }
-        
+        CreateMessage("normal",element_data.title,element_data.description)
         elementBox.innerHTML = '';
         if (element_data && element_data.id === '4363026331' && window.location.pathname === '/Algorithms/AlgoPy/') {
             let page_num = [];
@@ -88,7 +90,7 @@ function get_data_from_json() {
             if (page_num.length !== 0) {
                 elementBox.innerHTML = `
                 <div class="share-container">
-                <button class="copy" onclick="${copyTextToClipboard(window.location.href)}">
+                <button class="copy button-copy">
                 <span
                     class="tooltip"
                     data-text-initial="Copy Link"
@@ -169,11 +171,10 @@ function get_data_from_json() {
             if (element_data.image_uploader_res) {
                 element_data.image_uploader_res = element_data.image_uploader_res.replace(/\\/g, '/');
             }
-            console.log(funcs[element_data.use_function])
             var algorithm_page = `
                 ${window.location.pathname === '/Algorithms/AlgoPy/' ? `
                 <div class="share-container"> 
-                    <button class="copy" onclick="copyTextToClipboard(window.location.href)">
+                    <button class="copy button-copy" >
                         <span class="tooltip" data-text-initial="Copy Link" data-text-end="Copied!"></span>
                         <span>
                             <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 6.35 6.35">
@@ -207,10 +208,7 @@ function get_data_from_json() {
                         </div>
                         <pre class="code code-py">${Paragraphs(python_sentexe(sentence, element_data.code_python))}</pre>
                     </div>
-                    ${
-                        element_data.use_function ?
-                        `<pre class="res-code">>> ${funcs[element_data.use_function]}</pre>`: ''
-                    }
+                    <a href="/elena.editor/?c=${element_data.id}" type="button" class="btn btn-success">Tester le code </a>
                     
                     <div class="editor algo-code">
                         <div class="code-title">Algorithme </div>
@@ -242,27 +240,31 @@ function get_data_from_json() {
             } else {
                 document.querySelector(".comment").style.display = "none";
             }
+            document.querySelector(".button-copy").onclick = (copyTextToClipboard);
         } else {
             elementBox.innerHTML = '<span style="color: red;font-size:18px" class="sentenxe-py"> No matching data found for the given ID.</span>';
         }
         
     })
     .catch(err => {
-        showErrorMessageBox(err);
+        console.error(err);
+        CreateMessage("error","Erreur",err);
     });
 }
 
 document.addEventListener('DOMContentLoaded', get_data_from_json);
-function copyTextToClipboard(text) {
+function copyTextToClipboard() {
+    var text = window.location.href;
     if (!navigator.clipboard) {
         fallbackCopyTextToClipboard(text);
         return;
     }
 
     navigator.clipboard.writeText(text).then(() => {
-        showMessageBox('Copying text command was successful');
+        CreateMessage("success","Copy Text","Copying text command was successful");
+
     }).catch(err => {
-        showErrorMessageBox('Oops, unable to copy :'+ err);
+        CreateMessage("error","Oops",'Oops, unable to copy :'+ err);
     });
 }
 
@@ -286,11 +288,10 @@ function fallbackCopyTextToClipboard(text) {
     try {
         const successful = document.execCommand('copy');
         const msg = successful ? 'successful' : 'unsuccessful';
-        showMessageBox('Copying text command was ' + msg);
+        CreateMessage("success","Copy Text",'Copying text command was ' + msg);
     } catch (err) {
-        showErrorMessageBox('Oops, unable to copy '+ err);
+        CreateMessage("error","Oops",'Oops, unable to copy :'+ err);
     }
-
     document.body.removeChild(textarea);
 }
 
@@ -300,7 +301,8 @@ function next_page() {
     if (!isNaN(page_number) && page_number >= 1 && page_number < 4) {
         window.location.href = `?el_id=4363026331&p=${page_number + 1}`;
     } else {
-        showInfoMessageBox('stop');
+        CreateMessage("info","Numéro de page",'stop ');
+
     }
 }
 
@@ -309,43 +311,7 @@ function prev_page() {
     if (!isNaN(page_number) && page_number > 1 && page_number <= 4) {
         window.location.href = `?el_id=4363026331&p=${page_number - 1}`;
     } else {
-        showInfoMessageBox('stop');
+        CreateMessage("info","Numéro de page",'stop ');
+
     }
-}
-
-
-async function showMessageBox(message) {
-    const success_message = document.querySelector('#message-box');
-    success_message.textContent = message;
-    success_message.classList.add('show'); 
-    await sleep(2000);
-    success_message.textContent = '';
-    await sleep(1000);
-    success_message.classList.remove('show');
-}
-
-async function showErrorMessageBox(message) {
-    const success_message = document.querySelector('#err-message-box');
-    success_message.textContent = message;
-    success_message.classList.add('show'); 
-    await sleep(5000);
-    success_message.textContent = '';
-    await sleep(1000);
-    success_message.classList.remove('show');
-}
-
-async function showInfoMessageBox(message) {
-    const success_message = document.querySelector('#info-message-box');
-    success_message.textContent = message;
-    success_message.classList.add('show'); 
-    await sleep(5000);
-    success_message.textContent = '';
-    await sleep(1000);
-    success_message.classList.remove('show');
-}
-
-function ShowDivImg(s) {
-    var show_img = document.querySelector('.show-img');
-    show_img.style.display = "flex";
-    document.querySelector('#algo-img').src = s;
 }

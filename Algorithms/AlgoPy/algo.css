@@ -12,7 +12,8 @@ body {
     overflow: none;
 
 }
-.container {
+.main {
+    background-color: #16172b;
     width:100%;
     display: flex;
     flex-direction: column;

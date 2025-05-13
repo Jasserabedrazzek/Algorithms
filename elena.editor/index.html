@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Algorithme - Python Editor</title>
+    <link rel="stylesheet" href="/css/loaders.css">
+    <link rel="stylesheet" href="/Algorithms/algo.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/editor.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <link id="themeStylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="google-site-verification" content="ISm43lpidgQD1UbFgRQOfzK0hECQiaUjnfHuoG9aaEI" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="/images/_bd8e1d93-1405-472c-b3bc-c8a253d37367.jpeg" type="image/x-icon">
+    <script src="/lib/bootstrap/package/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/lib/bootstrap/package/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    
+</head>
+<body style="display: flex;flex-direction: column;">
+    <main class="main" style="background-color: #16172b;display: flex;flex-direction: column;">
+        <div class="connection-bar"></div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a href="../" class="navbar-brand ">
+                    <span class="algo">ALGO</span>
+                    <span class="rithme">RITHME</span>
+                </a>
+                <button class="navbar-toggler bg-light"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active home-links" aria-current="page" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white algo-links" href="/Algorithms/">Algorithms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white exercices-links" href="/exercices/">exercices</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="loaders">
+            <div class="spinner">
+                <div class="spinnerin"></div>
+            </div>
+        </div>
+        <main class="content" style="background-color: #16172b;" style="height: 100%;padding: 0;">
+            <div class="widget-code">
+                <button class="btn text-light" id="newFile" onmouseover="popover_btn('newFile','Nouveau')" onmouseout="popover_btn_leave('newFile')" onclick="newFileFunction()"><i class="fa fa-file"></i></button>
+                <button class="btn text-warning" id="openFile" onmouseover="popover_btn('openFile','Ouvrir')" onmouseout="popover_btn_leave('openFile')" onclick="openFileFunction()"><i class="fa fa-folder"></i></button>
+                <button class="btn text-primary" id="save" onmouseover="popover_btn('save','Enregistrer')" onmouseout="popover_btn_leave('save')" onclick="saveFunction()"><i class="fa fa-save"></i></button>
+                <button class="btn text-success" id="Run-code" onmouseover="popover_btn('Run-code','Exécuter')" onmouseout="popover_btn_leave('Run-code')" onclick="runCodeFunction()"><i class="fa fa-play"></i></button>
+                <button class="btn text-danger" id="stop-code" onmouseover="popover_btn('stop-code','Arrêter')" onmouseout="popover_btn_leave('stop-code')" onclick="stopCodeFunction()"><i class="fa fa-stop"></i></button>
+            </div>
+            <div class="input-widgets-code mb-3">
+                <textarea id="editor" class="form-control">
+    # Write your Python code here
+                </textarea>
+            </div>
+            <pre class="console-widgets-code alert alert-dark" id="output" style="height: 100%;">Python (&copy; Powered by Elena Algorithme - 2025) <br>>></pre>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+
+    </main>
+    <footer class="footer">
+        <span class="name"><span class="fgh-gg-s"><i class="fa-regular fa-copyright"></i></span> <span class="algo">ELena ALGO</span>
+        <span class="rithme">RITHME</span> <span class="fgh-gg-s">, BAC TN 2024 - <script>document.write(new Date().getFullYear())</script></span></span>
+    </footer>
+    <script src="/js/loader.js"></script>
+    <script src="/js/scrole-down.js"></script>
+    <script src="/js/params-links.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    
+    <script>
+        const codeInput = document.querySelector("#editor");
+        let editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true,
+            mode: "python",
+            theme: "default"
+            });
+
+        function popover_btn(id, text) {
+            const btn = document.getElementById(id);
+            if (!bootstrap.Popover.getInstance(btn)) {
+                const popover = new bootstrap.Popover(btn, {
+                    trigger: 'hover',
+                    content: text,
+                    placement: 'bottom'
+                });
+                popover.show();
+            }
+        }
+    
+        function popover_btn_leave(id) {
+            const btn = document.getElementById(id);
+            const popover = bootstrap.Popover.getInstance(btn);
+            if (popover) {
+                popover.hide();
+            }
+        }
+    
+        function newFileFunction() {
+            console.log('New file');
+            editor.setValue('   # Write your Python code here');
+        }
+        function openFileFunction() { 
+            console.log('Open file');
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = '.py';
+            fileInput.onchange = (event) => {
+                const file = event.target.files[0];
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const content = e.target.result;
+                    editor.setValue(content);
+                };
+                reader.readAsText(file);
+            };
+            fileInput.click();
+
+        }
+        let pyodideReady = loadPyodide();
+        function saveFunction() { 
+            console.log('Save'); 
+            const blob = new Blob([editor.getValue()], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'code.py';
+            document.body.appendChild(link);
+            link.click();
+        }
+        let worker;
+
+        function runCodeFunction() {
+            if (worker) worker.terminate();
+
+            worker = new Worker("/js/python-worker.js");
+
+            const output = document.getElementById("output");
+            output.textContent = "Python (© Powered by Elena Algorithme - 2025) \n>>>";
+
+            worker.onmessage = (e) => {
+                output.textContent += e.data + "\n>>>";
+                output.scrollTop = output.scrollHeight;
+                output.style.height = "100%";
+                output.style.overflowY = "auto";
+                
+            };
+
+            worker.onerror = (e) => {
+                output.textContent += "\nError: " + e.message;
+            };
+
+            const code = editor.getValue();
+            worker.postMessage(code);
+        }
+
+        function stopCodeFunction() {
+            if (worker) {
+                worker.terminate();
+                worker = null;
+                console.log("Code execution stopped.");
+                document.getElementById("output").textContent += "\n>> Execution stopped.";
+            }
+        }
+
+    </script>
+    <script>
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const c = params.get("c");
+        if (c) {
+            fetch("/json/algorithms.json")
+                .then(response => response.json())
+                .then(data => {
+                    const algo = data.find(item => item.id === c);
+                    if (algo) {
+                        editor.setValue(algo.code_python);
+                    } else {
+                        console.error("Algorithm not found");
+                    }
+                })
+                .catch(error => console.error("Error fetching JSON:", error));
+        }
+    </script>
+</body>
+</html>

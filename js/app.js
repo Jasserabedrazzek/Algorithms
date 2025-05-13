@@ -1,16 +1,7 @@
-import { create_html_element,add_to_DOM,create_css } from 'https://create-page-with-js.netlify.app/create-page.js';
+import { create_html_element,add_to_DOM,create_css } from '/lib/create_page.js';
 
-const card = create_html_element({
-    tag: 'div',
-    attributes: {
-        class: 'card'
-    }
-})
 
-add_to_DOM({
-    parent: 'body',
-    element: card
-})
+
 
 create_css(
     {
@@ -34,65 +25,8 @@ create_css(
         }
     }
 )
-const icon = create_html_element({
-    tag: 'i',
-    attributes: {
-        class: 'fa-brands fa-python'
-    }
-})
-const hide_icon = create_html_element({
-    tag: 'i',
-    attributes: {
-        class: 'fa-solid fa-xmark'
-    }
-});
-const title = create_html_element({
-    tag: 'span',
-    attributes: {
-        class: 'card-title'
-    },
-    children: 'Python'
-})
-const hide_card = create_html_element({
-    tag: 'button',
-    attributes: {
-        class: 'card-hide',
-        onclick: 'hide_card()'
-    },
-    children: hide_icon
-})
-const headers = create_html_element({
-    tag: 'header',
-    attributes: {
-        class: 'card-header-content'
-    },
-    
-})
-const card_headers = create_html_element({
-    tag: 'div',
-    attributes: {
-        class: 'card-header'
-    },
-    children: headers
-});
 
-add_to_DOM({
-    parent: '.card',
-    element: card_headers
-})
 
-add_to_DOM({
-    parent: '.card-header-content',
-    element: icon
-});
-add_to_DOM({
-    parent: '.card-header-content',
-    element: title
-});
-add_to_DOM({
-    parent: '.card-header-content',
-    element: hide_card
-});
 
 create_css({
     selector: '.card-header-content',
@@ -150,10 +84,7 @@ const card_content = create_html_element({
     }
 })
 
-add_to_DOM({
-    parent: '.card',
-    element: card_content
-})
+
 
 create_css(
     {
@@ -187,10 +118,6 @@ const card_footer = create_html_element({
     children: link_text
 })
 
-add_to_DOM({
-    parent: '.card',
-    element: card_footer
-})
 
 create_css(
     {
