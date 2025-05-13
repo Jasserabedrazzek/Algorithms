@@ -240,7 +240,7 @@ function get_data_from_json() {
             } else {
                 document.querySelector(".comment").style.display = "none";
             }
-            document.querySelector(".button-copy").onclick = (copyTextToClipboard);
+            //document.querySelector(".button-copy").onclick = (copyTextToClipboard);
         } else {
             elementBox.innerHTML = '<span style="color: red;font-size:18px" class="sentenxe-py"> No matching data found for the given ID.</span>';
         }
